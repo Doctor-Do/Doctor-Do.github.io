@@ -146,6 +146,81 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/2019/04/28/190428/" class="image is-7by1">
+            <img class="thumbnail" src="/gallery/building2.jpg" alt="190428">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-28T08:03:56.000Z">2019-04-28</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    5 分钟 读完 (大约 752 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/04/28/190428/">190428</a>
+            
+        </h1>
+        <div class="content">
+            <h3 id="38-Count-and-Say"><a href="#38-Count-and-Say" class="headerlink" title="38. Count and Say"></a><a href="https://leetcode-cn.com/problems/count-and-say/" target="_blank" rel="noopener">38. Count and Say</a></h3><ol start="38">
+<li>����<br>emmmmm.��Ŀ�Ƚ��Ѷ����������ܼ�����</li>
+</ol>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    string countAndSay(int n) &#123;</span><br><span class="line">        string res=<span class="hljs-string">"1"</span>;</span><br><span class="line">        <span class="hljs-keyword">for</span>(int i=1;i&lt;n;i++)</span><br><span class="line">            res=next(res);</span><br><span class="line">        <span class="hljs-built_in">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">    string next(string n) &#123;</span><br><span class="line">        int i=0;</span><br><span class="line">        string res;</span><br><span class="line">        <span class="hljs-keyword">while</span>(i&lt;n.length())&#123;</span><br><span class="line">            char temp=n[i];</span><br><span class="line">            int num=1;</span><br><span class="line">            <span class="hljs-keyword">while</span>(1)&#123;</span><br><span class="line">                <span class="hljs-keyword">if</span>(i+1!=n.length()&amp;&amp;n[i+1]==n[i])</span><br><span class="line">                &#123;</span><br><span class="line">                    num++; </span><br><span class="line">                    i++;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="hljs-keyword">else</span> <span class="hljs-built_in">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            res+=to_string(num);</span><br><span class="line">            res+=temp;</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-built_in">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h3 id="237-Delete-Node-in-a-Linked-List"><a href="#237-Delete-Node-in-a-Linked-List" class="headerlink" title="237. Delete Node in a Linked List"></a><a href="https://leetcode-cn.com/problems/delete-node-in-a-linked-list/" target="_blank" rel="noopener">237. Delete Node in a Linked List</a></h3><blockquote>
+<ol start="237">
+<li>ɾ�������еĽڵ�<br>�о�����˼·�������˹�����˵��ɾ���ڵ��һʱ�������Զ���ñ�ɾ����ǰһ�����nextָ��ɾ����next��Ϊʲô������˼·ȥ�������ɴӱ�ɾ����ʼ֮�������������</li>
+</ol>
+</blockquote>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    void deleteNode(ListNode* node) &#123;</span><br><span class="line">        ListNode* p=node;</span><br><span class="line">        <span class="hljs-keyword">while</span>(p-&gt;next)&#123;</span><br><span class="line">            p-&gt;val=p-&gt;next-&gt;val;</span><br><span class="line">            p=p-&gt;next;</span><br><span class="line">        &#125; </span><br><span class="line">        <span class="hljs-keyword">while</span>(node-&gt;next!=p)</span><br><span class="line">            node=node-&gt;next;</span><br><span class="line">        node-&gt;next=nullptr;</span><br><span class="line">        <span class="hljs-built_in">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h3 id="88-Merge-Sorted-Array"><a href="#88-Merge-Sorted-Array" class="headerlink" title="88. Merge Sorted Array"></a><a href="https://leetcode-cn.com/problems/merge-sorted-array/" target="_blank" rel="noopener">88. Merge Sorted Array</a></h3><blockquote>
+<ol start="88">
+<li>�ϲ�������������</li>
+</ol>
+</blockquote>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    void merge(vector&lt;int&gt;&amp; nums1, int m, vector&lt;int&gt;&amp; nums2, int n) &#123;</span><br><span class="line">        int i=0,j=0;</span><br><span class="line">        vector&lt;int&gt; temp;</span><br><span class="line">        <span class="hljs-keyword">while</span>(i&lt;m&amp;&amp;j&lt;n)&#123;</span><br><span class="line">            <span class="hljs-keyword">if</span>(nums1[i]&lt;=nums2[j])</span><br><span class="line">            &#123;</span><br><span class="line">                temp.push_back(nums1[i]);</span><br><span class="line">                i++;</span><br><span class="line">            &#125;<span class="hljs-keyword">else</span>&#123;</span><br><span class="line">                temp.push_back(nums2[j]);</span><br><span class="line">                j++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">if</span>(i!=m)&#123;</span><br><span class="line">            <span class="hljs-keyword">while</span>(i!=m)&#123;</span><br><span class="line">                temp.push_back(nums1[i]);</span><br><span class="line">                i++;               </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">if</span>(j!=n)&#123;</span><br><span class="line">            <span class="hljs-keyword">while</span>(j!=n)&#123;</span><br><span class="line">                temp.push_back(nums2[j]);</span><br><span class="line">                j++;                </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        i=0;</span><br><span class="line">        <span class="hljs-keyword">for</span>(int it:temp)&#123;</span><br><span class="line">            nums1[i]=it;</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-built_in">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h3 id="70-Climbing-Stairs"><a href="#70-Climbing-Stairs" class="headerlink" title="70. Climbing Stairs"></a><a href="https://leetcode-cn.com/problems/climbing-stairs/" target="_blank" rel="noopener">70. Climbing Stairs</a></h3><blockquote>
+<p>��¥��<br>쳲��������С���</p>
+</blockquote>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int climbStairs(int n) &#123;</span><br><span class="line">        <span class="hljs-keyword">if</span>(n==1) <span class="hljs-built_in">return</span> 1;</span><br><span class="line">        vector&lt;int&gt; dp;</span><br><span class="line">        dp.resize(n);</span><br><span class="line">        dp[0]=1;dp[1]=2;</span><br><span class="line">        <span class="hljs-keyword">for</span>(int i=2;i&lt;n;i++)</span><br><span class="line">            dp[i]=dp[i-1]+dp[i-2];</span><br><span class="line">        <span class="hljs-built_in">return</span> dp[n-1];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h3 id="53-Maximum-Subarray"><a href="#53-Maximum-Subarray" class="headerlink" title="53. Maximum Subarray"></a><a href="https://leetcode-cn.com/problems/maximum-subarray/" target="_blank" rel="noopener">53. Maximum Subarray</a></h3><blockquote>
+<ol start="53">
+<li>��������<br>����ʵ����̫���ˡ���������һ���綼û�����ף�˵���׻����Լ�̫���ˡ�����������Ҳֻ����ǿ�������׼�𰸡�<br>���������н��������ѶȲ�����easy ������һ��ʼ���뵽���Ǳ����Ļ���ȥ�������Ӷ�O(n^2)����Ȼ�ﲻ����Ŀ��Ҫ��ĸ��Ӷ� ����������Ŀ�ؼ��ʣ�����󡱡��������������ж���һ����̬�滮�����������Ŀ��wiki����<a href="https://zh.wikipedia.org/wiki/%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E5%88%97%E9%97%AE%E9%A2%98" target="_blank" rel="noopener">https://zh.wikipedia.org/wiki/%E6%9C%80%E5%A4%A7%E5%AD%90%E6%95%B0%E5%88%97%E9%97%AE%E9%A2%98</a> �������£�<br>1.����һ������f(n)���Ե�n����Ϊ������������е����ͣ�����һ�����ƹ�ϵf(n) = max(f(n-1) + A[n], A[n]);<br>2.����Щ���ͱ���������ȡ�����Ǹ����ǣ����������͡���Ϊ������������� �ȼ��� ������n����Ϊ������������к� </li>
+</ol>
+</blockquote>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int maxSubArray(vector&lt;int&gt;&amp; nums) &#123;</span><br><span class="line">        int tempmax,res;</span><br><span class="line">        res=nums[0];</span><br><span class="line">        tempmax=0;</span><br><span class="line">        <span class="hljs-keyword">for</span>(int i=0;i&lt;nums.size();i++)&#123;</span><br><span class="line">            tempmax=max(tempmax+nums[i],nums[i]);</span><br><span class="line">            res=max(res,tempmax);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-built_in">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/2019/04/27/190427/" class="image is-7by1">
             <img class="thumbnail" src="/gallery/building2.jpg" alt="4.27LeetCode">
         </a>
@@ -165,7 +240,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    5 分钟 读完 (大约 751 个字)
+                    6 分钟 读完 (大约 835 个字)
                 </span>
                 
                 
@@ -198,10 +273,10 @@
 <figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    void rotate(vector&lt;vector&lt;int&gt;&gt;&amp; matrix) &#123;</span><br><span class="line">        <span class="hljs-keyword">if</span>(matrix.empty()) <span class="hljs-built_in">return</span>;</span><br><span class="line">        int n=matrix.size();</span><br><span class="line">        <span class="hljs-keyword">for</span>(int i=0;i&lt;n/2;i++)&#123;</span><br><span class="line">            <span class="hljs-keyword">for</span>(int j=i;j&lt;n-i-1;j++)&#123;</span><br><span class="line">                int temp=matrix[i][j];</span><br><span class="line">                matrix[i][j]=matrix[n-1-j][i];</span><br><span class="line">                matrix[n-1-j][i]=matrix[n-1-i][n-1-j];</span><br><span class="line">                matrix[n-1-i][n-1-j]=matrix[j][n-1-i];</span><br><span class="line">                matrix[j][n-1-i]=temp;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-built_in">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <h3 id="242-Valid-Anagram"><a href="#242-Valid-Anagram" class="headerlink" title="242. Valid Anagram"></a><a href="https://leetcode-cn.com/problems/valid-anagram/" target="_blank" rel="noopener">242. Valid Anagram</a></h3><blockquote>
 <ol start="242">
-<li>有效的字母异位词<br>建立字母表 再比较。 也可以用map去做。<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    bool isAnagram(string s, string t) &#123;</span><br><span class="line">        int a[26]=&#123;0&#125;;</span><br><span class="line">        int b[26]=&#123;0&#125;;</span><br><span class="line">        <span class="hljs-keyword">for</span>(int i=0;i&lt;s.length();i++)</span><br><span class="line">            a[s[i]-<span class="hljs-string">'a'</span>]++;</span><br><span class="line">        <span class="hljs-keyword">for</span>(int i=0;i&lt;t.length();i++)</span><br><span class="line">            b[t[i]-<span class="hljs-string">'a'</span>]++;</span><br><span class="line">        <span class="hljs-keyword">for</span>(int i=0;i&lt;26;i++)</span><br><span class="line">            <span class="hljs-keyword">if</span>(a[i]!=b[i]) <span class="hljs-built_in">return</span> <span class="hljs-literal">false</span>;</span><br><span class="line">        <span class="hljs-built_in">return</span> <span class="hljs-literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-</li>
+<li>有效的字母异位词<br>建立字母表 再比较。 也可以用map去做。</li>
 </ol>
 </blockquote>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    bool isAnagram(string s, string t) &#123;</span><br><span class="line">        int a[26]=&#123;0&#125;;</span><br><span class="line">        int b[26]=&#123;0&#125;;</span><br><span class="line">        <span class="hljs-keyword">for</span>(int i=0;i&lt;s.length();i++)</span><br><span class="line">            a[s[i]-<span class="hljs-string">'a'</span>]++;</span><br><span class="line">        <span class="hljs-keyword">for</span>(int i=0;i&lt;t.length();i++)</span><br><span class="line">            b[t[i]-<span class="hljs-string">'a'</span>]++;</span><br><span class="line">        <span class="hljs-keyword">for</span>(int i=0;i&lt;26;i++)</span><br><span class="line">            <span class="hljs-keyword">if</span>(a[i]!=b[i]) <span class="hljs-built_in">return</span> <span class="hljs-literal">false</span>;</span><br><span class="line">        <span class="hljs-built_in">return</span> <span class="hljs-literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <h3 id="125-Valid-Palindrome"><a href="#125-Valid-Palindrome" class="headerlink" title="125. Valid Palindrome"></a><a href="https://leetcode-cn.com/problems/valid-palindrome/" target="_blank" rel="noopener">125. Valid Palindrome</a></h3><blockquote>
 <ol start="125">
 <li>验证回文串<br>双指针法，感觉贴题目好有成就感。。题目不难，比较繁琐的是大小写的转换以及干扰字符去除的写法。</li>
@@ -212,6 +287,10 @@
 <li>字符串转换整数 (atoi)<br>还是属于比较简单的medium主要考察一个细心把。。</li>
 </ol>
 <figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int myAtoi(string str) &#123;</span><br><span class="line">        long long res=0;</span><br><span class="line">        <span class="hljs-keyword">if</span>(str.empty()) <span class="hljs-built_in">return</span> 0;</span><br><span class="line">        int i;</span><br><span class="line">        <span class="hljs-keyword">for</span>(i=0;i&lt;str.length();i++)</span><br><span class="line">            <span class="hljs-keyword">if</span>(str[i]!=<span class="hljs-string">' '</span>) <span class="hljs-built_in">break</span>;</span><br><span class="line">        <span class="hljs-keyword">if</span>(i==str.length()||(str[i]&lt;<span class="hljs-string">'0'</span>&amp;&amp;str[i]!=<span class="hljs-string">'-'</span>&amp;&amp;str[i]!=<span class="hljs-string">'+'</span>)||str[i]&gt;<span class="hljs-string">'9'</span>) <span class="hljs-built_in">return</span> 0;</span><br><span class="line">        char temp=str[i];</span><br><span class="line">        <span class="hljs-keyword">if</span>(str[i]==<span class="hljs-string">'-'</span>||str[i]==<span class="hljs-string">'+'</span>) i++;</span><br><span class="line">        <span class="hljs-keyword">while</span>(i&lt;str.length())&#123;</span><br><span class="line">            <span class="hljs-keyword">if</span>(str[i]&gt;=<span class="hljs-string">'0'</span>&amp;&amp;str[i]&lt;=<span class="hljs-string">'9'</span>)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="hljs-keyword">if</span>(res&gt;pow(2,31)-1) <span class="hljs-built_in">return</span> temp==<span class="hljs-string">'-'</span>?INT_MIN:INT_MAX;</span><br><span class="line">                res=res*10+(int)(str[i]-<span class="hljs-string">'0'</span>);</span><br><span class="line">                i++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="hljs-keyword">else</span> <span class="hljs-built_in">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">if</span>(temp==<span class="hljs-string">'-'</span>) res=res*(-1);</span><br><span class="line">        <span class="hljs-keyword">if</span>(res&gt;pow(2,31)-1) <span class="hljs-built_in">return</span> INT_MAX;</span><br><span class="line">        <span class="hljs-keyword">if</span>(res&lt;pow(2,31)*(-1)) <span class="hljs-built_in">return</span> INT_MIN;</span><br><span class="line">        <span class="hljs-built_in">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h3 id="28-Implement-strStr"><a href="#28-Implement-strStr" class="headerlink" title="28. Implement strStr()"></a><a href="https://leetcode-cn.com/problems/implement-strstr/" target="_blank" rel="noopener">28. Implement strStr()</a></h3><blockquote>
+<p>实现strStr()</p>
+</blockquote>
+<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">// 我枯了，明明是道ez题，居然随便写写过不了。。。还要剪枝。。</span><br><span class="line"></span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int strStr(string haystack, string needle) &#123;</span><br><span class="line">        <span class="hljs-keyword">if</span>(needle.empty()) <span class="hljs-built_in">return</span> 0;</span><br><span class="line">        int n1=haystack.length(),n2=needle.length();</span><br><span class="line">        <span class="hljs-keyword">if</span>(n2&gt;n1) <span class="hljs-built_in">return</span> -1;</span><br><span class="line">        int i=0;</span><br><span class="line">        <span class="hljs-keyword">while</span>(i+n2&lt;=haystack.length())&#123;</span><br><span class="line">            int t=i;</span><br><span class="line">            int j=0;</span><br><span class="line">            <span class="hljs-keyword">for</span>( j=0;j&lt;needle.length();j++)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="hljs-keyword">if</span>(haystack[t]!=needle[j]) <span class="hljs-built_in">break</span>;</span><br><span class="line">                t++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="hljs-keyword">if</span>(j==needle.length()) <span class="hljs-built_in">return</span> i;</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-built_in">return</span> -1;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
         </div>
         
         
@@ -436,7 +515,7 @@
                         文章
                     </p>
                     <p class="title has-text-weight-normal">
-                        5
+                        6
                     </p>
                 </div>
             </div>
@@ -456,7 +535,7 @@
                         标签
                     </p>
                     <p class="title has-text-weight-normal">
-                        12
+                        15
                     </p>
                 </div>
             </div>
@@ -559,7 +638,7 @@
                 <span class="level-item">leetcode</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">3</span>
+                <span class="level-item tag">4</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/杂谈/">
@@ -589,7 +668,7 @@
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/C/" style="font-size: 10px;">C++</a> <a href="/tags/N叉树/" style="font-size: 10px;">N叉树</a> <a href="/tags/n叉树/" style="font-size: 10px;">n叉树</a> <a href="/tags/二叉搜索树/" style="font-size: 10px;">二叉搜索树</a> <a href="/tags/前缀树/" style="font-size: 10px;">前缀树</a> <a href="/tags/动态规划/" style="font-size: 10px;">动态规划</a> <a href="/tags/双指针/" style="font-size: 10px;">双指针</a> <a href="/tags/字符串/" style="font-size: 10px;">字符串</a> <a href="/tags/数组/" style="font-size: 10px;">数组</a> <a href="/tags/贪心算法/" style="font-size: 10px;">贪心算法</a> <a href="/tags/递归迭代/" style="font-size: 10px;">递归迭代</a> <a href="/tags/随便写写/" style="font-size: 10px;">随便写写</a>
+        <a href="/tags/C/" style="font-size: 10px;">C++</a> <a href="/tags/N叉树/" style="font-size: 10px;">N叉树</a> <a href="/tags/n叉树/" style="font-size: 10px;">n叉树</a> <a href="/tags/二叉搜索树/" style="font-size: 10px;">二叉搜索树</a> <a href="/tags/前缀树/" style="font-size: 10px;">前缀树</a> <a href="/tags/动态规划/" style="font-size: 10px;">动态规划</a> <a href="/tags/双指针/" style="font-size: 10px;">双指针</a> <a href="/tags/字符串/" style="font-size: 10px;">字符串</a> <a href="/tags/数组/" style="font-size: 10px;">数组</a> <a href="/tags/贪心算法/" style="font-size: 10px;">贪心算法</a> <a href="/tags/递归迭代/" style="font-size: 10px;">递归迭代</a> <a href="/tags/随便写写/" style="font-size: 10px;">随便写写</a> <a href="/tags/�ϲ�����/" style="font-size: 10px;">�ϲ�����</a> <a href="/tags/��̬�滮/" style="font-size: 10px;">��̬�滮</a> <a href="/tags/����/" style="font-size: 10px;">����</a>
     </div>
 </div>
 
@@ -603,6 +682,25 @@
         <h3 class="menu-label">
             最新文章
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/04/28/190428/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/gallery/building2.jpg" alt="190428">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-28T08:03:56.000Z">2019-04-28</time></div>
+                    <a href="/2019/04/28/190428/" class="has-link-black-ter is-size-6">190428</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -680,25 +778,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/04/23/hello-world/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/xgnb.jpg" alt="Hello World">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T11:20:01.032Z">2019-04-23</time></div>
-                    <a href="/2019/04/23/hello-world/" class="has-link-black-ter is-size-6">Hello World</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/测试/">测试</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -717,7 +796,7 @@
                     <span class="level-item">四月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">5</span>
+                    <span class="level-item tag">6</span>
                 </span>
             </a>
         </li>
@@ -815,6 +894,27 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/随便写写/">
                         <span class="tag">随便写写</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/�ϲ�����/">
+                        <span class="tag">�ϲ�����</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/��̬�滮/">
+                        <span class="tag">��̬�滮</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/����/">
+                        <span class="tag">����</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -844,6 +944,25 @@
         
         <article class="media">
             
+            <a href="/2019/04/28/190428/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/gallery/building2.jpg" alt="190428">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-28T08:03:56.000Z">2019-04-28</time></div>
+                    <a href="/2019/04/28/190428/" class="has-link-black-ter is-size-6">190428</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/04/27/190427/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/gallery/building2.jpg" alt="4.27LeetCode">
@@ -918,25 +1037,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/04/23/hello-world/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/xgnb.jpg" alt="Hello World">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-23T11:20:01.032Z">2019-04-23</time></div>
-                    <a href="/2019/04/23/hello-world/" class="has-link-black-ter is-size-6">Hello World</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/测试/">测试</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -955,7 +1055,7 @@
                     <span class="level-item">四月 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">5</span>
+                    <span class="level-item tag">6</span>
                 </span>
             </a>
         </li>
@@ -1053,6 +1153,27 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/随便写写/">
                         <span class="tag">随便写写</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/�ϲ�����/">
+                        <span class="tag">�ϲ�����</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/��̬�滮/">
+                        <span class="tag">��̬�滮</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/����/">
+                        <span class="tag">����</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
