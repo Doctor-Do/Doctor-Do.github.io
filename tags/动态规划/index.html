@@ -145,6 +145,108 @@
     <div class="card">
     
     <div class="card-image">
+        <a href="/2019/05/03/190503/" class="image is-7by1">
+            <img class="thumbnail" src="/gallery/Italy.jpg" alt="5.3LeetCode">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-05-03T11:52:07.000Z">2019-05-03</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    9 分钟 读完 (大约 1361 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/05/03/190503/">5.3LeetCode</a>
+            
+        </h1>
+        <div class="content">
+            <h3 id="前两天放假，就没更新，每天也做不了几题，今天集中更新下。"><a href="#前两天放假，就没更新，每天也做不了几题，今天集中更新下。" class="headerlink" title="前两天放假，就没更新，每天也做不了几题，今天集中更新下。"></a>前两天放假，就没更新，每天也做不了几题，今天集中更新下。</h3><blockquote>
+<p>步入五月，感觉生活正在逐渐变得紧凑，这学期的课程都还没咋学，还有三门实验课要应付，再加上最近开始看java了，所以以后刷题量可能会减少点，但肯定不会停下！<br>还有个问题就是，初级算法卡片刷完了，现在开始刷中级算法了，感觉好难啊！。。头秃。</p>
+</blockquote>
+<h3 id="15-3Sum"><a href="#15-3Sum" class="headerlink" title="15.3Sum"></a><a href="https://leetcode-cn.com/problems/3sum/" target="_blank" rel="noopener">15.3Sum</a></h3><blockquote>
+<p>15.三数之和<br>C++.感觉好难啊！一开始不知道为什么总想着用map做，试了半天总是无法解决漏解的问题。。<br>看了答案才会做。<br>第一个是三指针的处理方式，将复杂度从O(n^3)降到了O(n^2)。学习了。<br>第二个是重复解的剔除，不需要通过set就可以实现。</p>
+</blockquote>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;vector&lt;int&gt;&gt; threeSum(vector&lt;int&gt;&amp; nums) &#123;</span><br><span class="line">        std::sort(nums.begin(),nums.end());</span><br><span class="line">        vector&lt;vector&lt;int&gt;&gt; res; </span><br><span class="line">        int n=nums.size();</span><br><span class="line">        for(int k=n-1;k&gt;1;k--)&#123;</span><br><span class="line">            int i=0,j=k-1;</span><br><span class="line">            while(i&lt;j)&#123;</span><br><span class="line">                if(nums[i]+nums[j]+nums[k]&gt;0) j--;</span><br><span class="line">                else if(nums[i]+nums[j]+nums[k]&lt;0) i++;</span><br><span class="line">                else&#123;</span><br><span class="line">                    vector&lt;int&gt; temp=&#123;nums[i],nums[j],nums[k]&#125;;</span><br><span class="line">                    res.push_back(temp);</span><br><span class="line">                    while(i+1&lt;n&amp;&amp;nums[i+1]==nums[i]) i++;</span><br><span class="line">                    i++;</span><br><span class="line">                    while(j-1&gt;=0&amp;&amp;nums[j-1]==nums[j]) j--;</span><br><span class="line">                    j--;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            while(k-1&gt;=0&amp;&amp;nums[k-1]==nums[k]) k--;</span><br><span class="line">        &#125;</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h3 id="73-Set-Matrix-Zeroes"><a href="#73-Set-Matrix-Zeroes" class="headerlink" title="73. Set Matrix Zeroes"></a><a href="https://leetcode-cn.com/problems/set-matrix-zeroes/" target="_blank" rel="noopener">73. Set Matrix Zeroes</a></h3><blockquote>
+<p>73.矩阵置零<br>之前看过这道题，大概知道不用额外空间思路，但是自己写起来又犯蠢了。。<br>用来做标志位的首行和首列不能先乱动(不然就全部变成0了)，，<br>解决方案是用两个bool去存是否要把首行首列变0</p>
+</blockquote>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public void setZeroes(int[][] matrix) &#123;</span><br><span class="line">        boolean row=false,coloum=false;</span><br><span class="line">        for(int j=0;j&lt;matrix[0].length;j++)</span><br><span class="line">            if(matrix[0][j]==0)&#123;</span><br><span class="line">                row=true; break;</span><br><span class="line">            &#125;</span><br><span class="line">        for(int i=0;i&lt;matrix.length;i++)</span><br><span class="line">            if(matrix[i][0]==0)&#123;</span><br><span class="line">                coloum=true; break;</span><br><span class="line">            &#125;</span><br><span class="line">        </span><br><span class="line">        for(int i=0;i&lt;matrix.length;i++)</span><br><span class="line">            for(int j=0;j&lt;matrix[0].length;j++)</span><br><span class="line">                if(matrix[i][j]==0)&#123;</span><br><span class="line">                    matrix[i][0]=0;</span><br><span class="line">                    matrix[0][j]=0;</span><br><span class="line">                &#125;</span><br><span class="line">        for(int i=1;i&lt;matrix.length;i++)</span><br><span class="line">            for(int j=1;j&lt;matrix[0].length;j++)</span><br><span class="line">                if(matrix[i][0]==0||matrix[0][j]==0)</span><br><span class="line">                    matrix[i][j]=0;</span><br><span class="line">        </span><br><span class="line">        if(row)</span><br><span class="line">            for(int j=0;j&lt;matrix[0].length;j++)</span><br><span class="line">                matrix[0][j]=0;</span><br><span class="line">        if(coloum)</span><br><span class="line">            for(int i=0;i&lt;matrix.length;i++)</span><br><span class="line">                matrix[i][0]=0;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="5-Longest-Palindromic-Substring"><a href="#5-Longest-Palindromic-Substring" class="headerlink" title="5. Longest Palindromic Substring"></a><a href="https://leetcode-cn.com/problems/longest-palindromic-substring/" target="_blank" rel="noopener">5. Longest Palindromic Substring</a></h3><blockquote>
+<ol start="5">
+<li>最长回文子串<br>这道题简直是剧毒。。做得我头都大了。昨天晚上做了俩小时，今天下午又看了俩小时 做了三种方法，dp，中心拓展，马拉车算法</li>
+</ol>
+</blockquote>
+<p>解法1： 动态规划<br>二维动态规划，不看答案根本想不到。bobo</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public String longestPalindrome(String s) &#123;</span><br><span class="line">        String res=new String();</span><br><span class="line">        int n=s.length();</span><br><span class="line">        boolean[][] dp=new boolean[n][n];</span><br><span class="line">        for(int i=0;i&lt;n;i++)</span><br><span class="line">            dp[i][i]=true;</span><br><span class="line">        for(int i=0;i&lt;n-1;i++)&#123;</span><br><span class="line">            if(s.charAt(i)==s.charAt(i+1))</span><br><span class="line">                dp[i][i+1]=true;</span><br><span class="line">            else dp[i][i+1]=false;</span><br><span class="line">        &#125;</span><br><span class="line">        for(int k=2;k&lt;n;k++)&#123;</span><br><span class="line">            for(int i=0;i&lt;n-k;i++)&#123;</span><br><span class="line">                if(dp[i+1][k+i-1]==true &amp;&amp; s.charAt(i)==s.charAt(k+i))</span><br><span class="line">                    dp[i][k+i]=true;</span><br><span class="line">                else dp[i][k+i]=false;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        int flag=0;</span><br><span class="line">        for(int i=n-1;i&gt;=0;i--)&#123;</span><br><span class="line">            for(int j=0;j&lt;n-i;j++)</span><br><span class="line">                if(dp[j][i+j]==true)&#123;</span><br><span class="line">                    flag=1;</span><br><span class="line">                    res=s.substring(j,i+j+1);</span><br><span class="line">                    break;</span><br><span class="line">                &#125;</span><br><span class="line">            if(flag==1) break;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>解法2： 中心拓展算法<br>比较容易理解，但是没想到当时。</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">public String longestPalindrome(String s) &#123;</span><br><span class="line">    if (s == null || s.length() &lt; 1) return &quot;&quot;;</span><br><span class="line">    int start = 0, end = 0;</span><br><span class="line">    for (int i = 0; i &lt; s.length(); i++) &#123;</span><br><span class="line">        int len1 = expandAroundCenter(s, i, i);</span><br><span class="line">        int len2 = expandAroundCenter(s, i, i + 1);</span><br><span class="line">        int len = Math.max(len1, len2);</span><br><span class="line">        if (len &gt; end - start) &#123;</span><br><span class="line">            start = i - (len - 1) / 2;</span><br><span class="line">            end = i + len / 2;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return s.substring(start, end + 1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">private int expandAroundCenter(String s, int left, int right) &#123;</span><br><span class="line">    int L = left, R = right;</span><br><span class="line">    while (L &gt;= 0 &amp;&amp; R &lt; s.length() &amp;&amp; s.charAt(L) == s.charAt(R)) &#123;</span><br><span class="line">        L--;</span><br><span class="line">        R++;</span><br><span class="line">    &#125;</span><br><span class="line">    return R - L - 1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>解法3： 马拉车算法<br>网上博客都看不太懂，说得都不是人话。。找了篇漫画感觉讲的还挺形象的，附上链接：<br><a href="https://mp.weixin.qq.com/s?__biz=MzIzMTE1ODkyNQ==&amp;mid=2649410225&amp;idx=1&amp;sn=ed045e8edc3c49a436a328e5f0f37a55&amp;chksm=f0b60f53c7c18645b4c04a69ad314723cce94ed56994d6f963c2275a2db8d85f973f15f508e4&amp;mpshare=1&amp;scene=23&amp;srcid=1001JCsBlpxgUWjgixasChNQ#rd" target="_blank" rel="noopener">点击查看漫画</a></p>
+<p>然后照着源码写了下java版本的，第一次用StringBuffer. sb哈哈哈。<br>感慨On复杂度确实比On^2快了好多……</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public String preHandle(String s)&#123;</span><br><span class="line">        StringBuffer sb=new StringBuffer();</span><br><span class="line">        sb.append(&apos;#&apos;);</span><br><span class="line">        for(int i=0;i&lt;s.length();i++)&#123;</span><br><span class="line">            sb.append(s.charAt(i));</span><br><span class="line">            sb.append(&apos;#&apos;);</span><br><span class="line">        &#125;</span><br><span class="line">        return sb.toString();</span><br><span class="line">    &#125;</span><br><span class="line">    public String longestPalindrome(String s) &#123;</span><br><span class="line">        String str=preHandle(s);</span><br><span class="line">        int rightboard=0;</span><br><span class="line">        int rightcenter=0;</span><br><span class="line">        int[] halflen = new int[str.length()];</span><br><span class="line">        int center=0;</span><br><span class="line">        int maxlen=0;</span><br><span class="line">        for(int i=0;i&lt;str.length();i++)&#123;</span><br><span class="line">            boolean needSearch=true;</span><br><span class="line">            if(i&lt;rightboard)&#123;</span><br><span class="line">                int left=2*rightcenter-i;</span><br><span class="line">                halflen[i]=halflen[left];</span><br><span class="line">                if(i+halflen[i]&gt;rightboard)</span><br><span class="line">                    halflen[i]=rightboard-i;</span><br><span class="line">                if(i+halflen[i]&lt;rightboard)</span><br><span class="line">                    needSearch=false;</span><br><span class="line">            &#125;</span><br><span class="line">            if(needSearch)&#123;</span><br><span class="line">                while(i-halflen[i]-1&gt;=0 &amp;&amp;i+halflen[i]+1&lt;str.length())&#123;</span><br><span class="line">                    if(str.charAt(i-halflen[i]-1)==str.charAt(i+halflen[i]+1))&#123;</span><br><span class="line">                        halflen[i]++;</span><br><span class="line">                    &#125;</span><br><span class="line">                    else break;</span><br><span class="line">                &#125;</span><br><span class="line">                rightboard=i+halflen[i];</span><br><span class="line">                rightcenter=i;</span><br><span class="line">                if(halflen[i]&gt;maxlen)&#123;</span><br><span class="line">                    center=i;</span><br><span class="line">                    maxlen=halflen[i];</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        StringBuffer sb=new StringBuffer();</span><br><span class="line">        for(int i = center - maxlen + 1; i &lt;= center + maxlen; i += 2) &#123;</span><br><span class="line">            sb.append(str.charAt(i));</span><br><span class="line">        &#125;</span><br><span class="line">        return sb.toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="334-Increasing-Triplet-Subsequence"><a href="#334-Increasing-Triplet-Subsequence" class="headerlink" title="334. Increasing Triplet Subsequence"></a><a href="https://leetcode-cn.com/problems/increasing-triplet-subsequence/" target="_blank" rel="noopener">334. Increasing Triplet Subsequence</a></h3><blockquote>
+<ol start="334">
+<li>递增的三元子序列<br>挺有意思的一道题，想清楚就好了，只要记录当前最小值和某个子序列里第二大的数就可以了。</li>
+</ol>
+</blockquote>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public boolean increasingTriplet(int[] nums) &#123;</span><br><span class="line">        if(nums.length&lt;3) return false;</span><br><span class="line">        int low=Integer.MAX_VALUE, mid=Integer.MAX_VALUE;</span><br><span class="line">        int i=0;</span><br><span class="line">        while(i&lt;nums.length)&#123;</span><br><span class="line">            if(nums[i]&lt;=low)</span><br><span class="line">                low=nums[i];</span><br><span class="line">            else if(nums[i]&lt;mid)</span><br><span class="line">                mid=nums[i];</span><br><span class="line">            else if(nums[i]&gt;mid) return true;</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">        return false;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="103-Binary-Tree-Zigzag-Level-Order-Traversal"><a href="#103-Binary-Tree-Zigzag-Level-Order-Traversal" class="headerlink" title="103. Binary Tree Zigzag Level Order Traversal"></a><a href="https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal/" target="_blank" rel="noopener">103. Binary Tree Zigzag Level Order Traversal</a></h3><blockquote>
+<ol start="103">
+<li>二叉树的锯齿形层次遍历<br>层次遍历的变种，没啥难度。</li>
+</ol>
+</blockquote>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public List&lt;List&lt;Integer&gt;&gt; zigzagLevelOrder(TreeNode root) &#123;</span><br><span class="line">        List&lt;List&lt;Integer&gt;&gt; res= new ArrayList&lt;&gt;();</span><br><span class="line">        Stack&lt;TreeNode&gt; left=new Stack&lt;&gt;();</span><br><span class="line">        Stack&lt;TreeNode&gt; right=new Stack&lt;&gt;();</span><br><span class="line">        if(root==null) return res;</span><br><span class="line">        right.push(root);</span><br><span class="line">        boolean flag=true;</span><br><span class="line">        while(!left.isEmpty() ||!right.isEmpty())&#123;</span><br><span class="line">            List&lt;Integer&gt; l=new ArrayList&lt;&gt;();</span><br><span class="line">            if(flag)&#123;</span><br><span class="line">                while(!right.isEmpty())&#123;</span><br><span class="line">                    TreeNode temp=right.pop();</span><br><span class="line">                    l.add(temp.val);</span><br><span class="line">                    if(temp.left!=null) left.push(temp.left);</span><br><span class="line">                    if(temp.right!=null) left.push(temp.right);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            else</span><br><span class="line">                while(!left.isEmpty())&#123;</span><br><span class="line">                    TreeNode temp=left.pop();</span><br><span class="line">                    l.add(temp.val);</span><br><span class="line">                    if(temp.right!=null) right.push(temp.right);</span><br><span class="line">                    if(temp.left!=null) right.push(temp.left);</span><br><span class="line">                &#125;</span><br><span class="line">            res.add(l);</span><br><span class="line">            flag=!flag;</span><br><span class="line">        &#125;</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="230-Kth-Smallest-Element-in-a-BST"><a href="#230-Kth-Smallest-Element-in-a-BST" class="headerlink" title="230. Kth Smallest Element in a BST"></a><a href="https://leetcode-cn.com/problems/kth-smallest-element-in-a-bst/" target="_blank" rel="noopener">230. Kth Smallest Element in a BST</a></h3><blockquote>
+<ol start="230">
+<li>二叉搜索树中第K小的元素<br>中序遍历即可。</li>
+</ol>
+</blockquote>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public int kthSmallest(TreeNode root, int k) &#123;</span><br><span class="line">        List&lt;Integer&gt; list=new ArrayList&lt;&gt;();</span><br><span class="line">        help(root,list,k);</span><br><span class="line">        return (int)list.get(k-1);</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    public void help(TreeNode p,List&lt;Integer&gt; list,int k)&#123;</span><br><span class="line">        if(p==null||k==0) return;</span><br><span class="line">        help(p.left,list,k);</span><br><span class="line">        k--;</span><br><span class="line">        list.add(p.val);</span><br><span class="line">        help(p.right,list,k);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="17-Letter-Combinations-of-a-Phone-Number"><a href="#17-Letter-Combinations-of-a-Phone-Number" class="headerlink" title="17. Letter Combinations of a Phone Number"></a><a href="https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/" target="_blank" rel="noopener">17. Letter Combinations of a Phone Number</a></h3><blockquote>
+<ol start="17">
+<li>电话号码的字母组合<br>发现之前好久没接触过回溯的题目了。。第一个想法就是for循环，但是不知道String的长度<br>偷看了评论区答案，用递归去写。。。没有必要记录步长、。</li>
+</ol>
+</blockquote>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public List&lt;String&gt; letterCombinations(String digits) &#123;</span><br><span class="line">        int n=digits.length();</span><br><span class="line">        String s=new String();</span><br><span class="line">        List&lt;String&gt; res=new ArrayList&lt;&gt;();</span><br><span class="line">        if(n==0) return res;</span><br><span class="line">        help(res,&quot;&quot;,digits);</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">    private void help(List&lt;String&gt; list,String s,String digits)&#123;</span><br><span class="line">        String[] reps=&#123;&quot;abc&quot;, &quot;def&quot;, &quot;ghi&quot;, &quot;jkl&quot;, &quot;mno&quot;, &quot;pqrs&quot;, &quot;tuv&quot;, &quot;wxyz&quot;&#125;;</span><br><span class="line">        if(s.length()==digits.length())&#123;</span><br><span class="line">            list.add(s); </span><br><span class="line">            return;</span><br><span class="line">        &#125;</span><br><span class="line">        int n=s.length();</span><br><span class="line">        String rep=reps[digits.charAt(n)-50];</span><br><span class="line">        for(int i=0;i&lt;rep.length();i++)</span><br><span class="line">        &#123;</span><br><span class="line">            help(list,s+rep.charAt(i),digits);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="22-Generate-Parentheses"><a href="#22-Generate-Parentheses" class="headerlink" title="22. Generate Parentheses"></a><a href="https://leetcode-cn.com/problems/generate-parentheses/" target="_blank" rel="noopener">22. Generate Parentheses</a></h3><blockquote>
+<p>22.括号生成</p>
+</blockquote>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public List&lt;String&gt; generateParenthesis(int n) &#123;</span><br><span class="line">        List&lt;String&gt; res=new ArrayList&lt;&gt;();</span><br><span class="line">        if(n==0) return res;</span><br><span class="line">        help(res,0,0,n,&quot;&quot;);</span><br><span class="line">        return res;</span><br><span class="line">    &#125;</span><br><span class="line">    public void help(List&lt;String&gt; list, int left, int right,int n, String s)&#123;</span><br><span class="line">        if(left==right&amp;&amp;left==n) &#123;</span><br><span class="line">            list.add(s);</span><br><span class="line">            return;</span><br><span class="line">        &#125;</span><br><span class="line">        if(left&lt;n) help(list,left+1,right,n,s+&apos;(&apos;);</span><br><span class="line">        if(right&lt;left) help(list,left,right+1,n,s+&apos;)&apos;);</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>终于贴完了，收工！</p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-image">
         <a href="/2019/04/29/190429/" class="image is-7by1">
             <img class="thumbnail" src="/gallery/human1.jpg" alt="4.29LeetCode">
         </a>
@@ -422,7 +524,7 @@
                         文章
                     </p>
                     <p class="title has-text-weight-normal">
-                        9
+                        10
                     </p>
                 </div>
             </div>
@@ -553,7 +655,7 @@
                 <span class="level-item">leetcode</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">6</span>
+                <span class="level-item tag">7</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/杂谈/">
@@ -583,7 +685,7 @@
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/C/" style="font-size: 20px;">C++</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/N叉树/" style="font-size: 10px;">N叉树</a> <a href="/tags/n叉树/" style="font-size: 10px;">n叉树</a> <a href="/tags/二叉搜索树/" style="font-size: 10px;">二叉搜索树</a> <a href="/tags/位运算/" style="font-size: 10px;">位运算</a> <a href="/tags/前缀树/" style="font-size: 10px;">前缀树</a> <a href="/tags/动态规划/" style="font-size: 20px;">动态规划</a> <a href="/tags/双指针/" style="font-size: 10px;">双指针</a> <a href="/tags/合并排序/" style="font-size: 10px;">合并排序</a> <a href="/tags/字符串/" style="font-size: 10px;">字符串</a> <a href="/tags/数组/" style="font-size: 20px;">数组</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a> <a href="/tags/贪心算法/" style="font-size: 10px;">贪心算法</a> <a href="/tags/递归迭代/" style="font-size: 10px;">递归迭代</a> <a href="/tags/链表/" style="font-size: 10px;">链表</a> <a href="/tags/随便写写/" style="font-size: 10px;">随便写写</a>
+        <a href="/tags/C/" style="font-size: 16.67px;">C++</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/N叉树/" style="font-size: 10px;">N叉树</a> <a href="/tags/n叉树/" style="font-size: 10px;">n叉树</a> <a href="/tags/二叉搜索树/" style="font-size: 10px;">二叉搜索树</a> <a href="/tags/位运算/" style="font-size: 10px;">位运算</a> <a href="/tags/前缀树/" style="font-size: 10px;">前缀树</a> <a href="/tags/动态规划/" style="font-size: 20px;">动态规划</a> <a href="/tags/双指针/" style="font-size: 13.33px;">双指针</a> <a href="/tags/合并排序/" style="font-size: 10px;">合并排序</a> <a href="/tags/字符串/" style="font-size: 10px;">字符串</a> <a href="/tags/数组/" style="font-size: 16.67px;">数组</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a> <a href="/tags/贪心算法/" style="font-size: 10px;">贪心算法</a> <a href="/tags/递归迭代/" style="font-size: 10px;">递归迭代</a> <a href="/tags/链表/" style="font-size: 10px;">链表</a> <a href="/tags/随便写写/" style="font-size: 10px;">随便写写</a>
     </div>
 </div>
 
@@ -597,6 +699,25 @@
         <h3 class="menu-label">
             最新文章
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/05/03/190503/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/gallery/Italy.jpg" alt="5.3LeetCode">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-03T11:52:07.000Z">2019-05-03</time></div>
+                    <a href="/2019/05/03/190503/" class="has-link-black-ter is-size-6">5.3LeetCode</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -674,25 +795,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/04/27/190427/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/building2.jpg" alt="4.27LeetCode">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-27T02:33:46.000Z">2019-04-27</time></div>
-                    <a href="/2019/04/27/190427/" class="has-link-black-ter is-size-6">4.27LeetCode</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -704,6 +806,17 @@
             归档
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/05/">
+                <span class="level-start">
+                    <span class="level-item">五月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2019/04/">
@@ -781,14 +894,14 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/动态规划/">
                         <span class="tag">动态规划</span>
-                        <span class="tag is-grey">3</span>
+                        <span class="tag is-grey">4</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/双指针/">
                         <span class="tag">双指针</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -873,6 +986,25 @@
         
         <article class="media">
             
+            <a href="/2019/05/03/190503/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/gallery/Italy.jpg" alt="5.3LeetCode">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-03T11:52:07.000Z">2019-05-03</time></div>
+                    <a href="/2019/05/03/190503/" class="has-link-black-ter is-size-6">5.3LeetCode</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/04/30/190430/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/gallery/human1.jpg" alt="4.30LeetCode">
@@ -947,25 +1079,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/04/27/190427/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/building2.jpg" alt="4.27LeetCode">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-04-27T02:33:46.000Z">2019-04-27</time></div>
-                    <a href="/2019/04/27/190427/" class="has-link-black-ter is-size-6">4.27LeetCode</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -977,6 +1090,17 @@
             归档
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2019/05/">
+                <span class="level-start">
+                    <span class="level-item">五月 2019</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2019/04/">
@@ -1054,14 +1178,14 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/动态规划/">
                         <span class="tag">动态规划</span>
-                        <span class="tag is-grey">3</span>
+                        <span class="tag is-grey">4</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/双指针/">
                         <span class="tag">双指针</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
