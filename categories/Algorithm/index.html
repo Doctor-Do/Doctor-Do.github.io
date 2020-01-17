@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html lang="zh">
-<head><meta name="generator" content="Hexo 3.8.0">
-    <meta charset="utf-8">
+<html  lang="zh">
+<head>
+    <meta charset="utf-8" />
+
+<meta name="generator" content="Hexo 3.8.0" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
 <title>分类: Algorithm - 江湖小虾米</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
-
-    <meta property="og:type" content="website">
+    <meta name="description" content="This is a personal blog contributed by wxm in 2019. I just use this to record my life. I&apos;ll update anthing I like on this website from time to time.">
+<meta name="keywords" content="infinite world">
+<meta property="og:type" content="website">
 <meta property="og:title" content="江湖小虾米">
 <meta property="og:url" content="http://doctordo.cn/categories/Algorithm/index.html">
 <meta property="og:site_name" content="江湖小虾米">
+<meta property="og:description" content="This is a personal blog contributed by wxm in 2019. I just use this to record my life. I&apos;ll update anthing I like on this website from time to time.">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://doctordo.cn/images/og_image.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="江湖小虾米">
+<meta name="twitter:description" content="This is a personal blog contributed by wxm in 2019. I just use this to record my life. I&apos;ll update anthing I like on this website from time to time.">
 <meta name="twitter:image" content="http://doctordo.cn/images/og_image.png">
 
 
@@ -34,45 +41,32 @@
 
     
     
-    
-    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
-    
+<style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
 
     
     
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
-    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
 
     
     
-
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
 
-
     
     
     
     
-
 <link rel="stylesheet" href="/css/back-to-top.css">
 
-
     
     
     
     
-
     
     
-<link rel="stylesheet" href="/css/progressbar.css">
+    
+    <link rel="stylesheet" href="/css/progressbar.css">
 <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
-
-    
-    
-    
-
     
     
     
@@ -94,23 +88,27 @@
             
             <div class="navbar-start">
                 
-                <a class="navbar-item" href="/">Home</a>
+                <a class="navbar-item"
+                href="/">Home</a>
                 
-                <a class="navbar-item" href="/archives">Archives</a>
+                <a class="navbar-item"
+                href="/archives">Archives</a>
                 
-                <a class="navbar-item" href="/categories">Categories</a>
+                <a class="navbar-item"
+                href="/categories">Categories</a>
                 
-                <a class="navbar-item" href="/tags">Tags</a>
+                <a class="navbar-item"
+                href="/tags">Tags</a>
                 
-                <a class="navbar-item" href="/about">About</a>
+                <a class="navbar-item"
+                href="/about">About</a>
                 
             </div>
             
             <div class="navbar-end">
                 
                     
-                    
-                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="http://github.com/ppoffice/hexo-theme-icarus">
+                    <a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
                         
                         <i class="fab fa-github"></i>
                         
@@ -143,7 +141,8 @@
     </div>
 </div>
 
-    <div class="card">
+    
+<div class="card">
     
     <div class="card-image">
         <a href="/2019/04/29/洗牌算法/" class="image is-7by1">
@@ -178,7 +177,7 @@
             
         </h1>
         <div class="content">
-            <h2 id="三种洗牌算法shuffle"><a href="#三种洗牌算法shuffle" class="headerlink" title="三种洗牌算法shuffle"></a><a href="https://blog.csdn.net/qq_26399665/article/details/79831490" target="_blank" rel="noopener">三种洗牌算法shuffle</a></h2><p>在csdn上看了篇博客，感觉不错，在这儿贴过来</p>
+            <h2 id="三种洗牌算法shuffle"><a href="#三种洗牌算法shuffle" class="headerlink" title="三种洗牌算法shuffle"></a><a href="https://blog.csdn.net/qq_26399665/article/details/79831490">三种洗牌算法shuffle</a></h2><p>在csdn上看了篇博客，感觉不错，在这儿贴过来</p>
 <ol>
 <li><p>背景<br>笔试时，遇到一个算法题：差不多是 在n个不同的数中随机取出不重复的m个数。洗牌算法是将原来的数组进行打散，使原数组的某个数在打散后的数组中的每个位置上等概率的出现，刚好可以解决该问题。</p>
 </li>
@@ -200,7 +199,7 @@
 </li>
 </ol>
 <p>下面证明其随机性，即每个元素被放置在新数组中的第i个位置是1/n（假设数组大小是n）。<br>证明：一个元素m被放入第i个位置的概率P = 前i-1个位置选择元素时没有选中m的概率 * 第i个位置选中m的概率，即<br>    <img src="/2019/04/29/洗牌算法/1.jpg" alt></p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">#define N 10</span></span><br><span class="line"><span class="hljs-comment">#define M 5</span></span><br><span class="line">void Fisher_Yates_Shuffle(vector&lt;int&gt;&amp; arr,vector&lt;int&gt;&amp; res)</span><br><span class="line">&#123;</span><br><span class="line">     srand((unsigned)time(NULL));</span><br><span class="line">     int k;</span><br><span class="line">     <span class="hljs-keyword">for</span> (int i=0;i&lt;M;++i)</span><br><span class="line">     &#123;</span><br><span class="line">     	k=rand()%arr.size();</span><br><span class="line">     	res.push_back(arr[k]);</span><br><span class="line">     	arr.erase(arr.begin()+k);</span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#define N 10</span></span><br><span class="line"><span class="comment">#define M 5</span></span><br><span class="line">void Fisher_Yates_Shuffle(vector&lt;int&gt;&amp; arr,vector&lt;int&gt;&amp; res)</span><br><span class="line">&#123;</span><br><span class="line">     srand((unsigned)time(NULL));</span><br><span class="line">     int k;</span><br><span class="line">     <span class="keyword">for</span> (int i=0;i&lt;M;++i)</span><br><span class="line">     &#123;</span><br><span class="line">     	k=rand()%arr.size();</span><br><span class="line">     	res.push_back(arr[k]);</span><br><span class="line">     	arr.erase(arr.begin()+k);</span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <pre><code>   时间复杂度为O(n*n),空间复杂度为O(n).
 2.2 Knuth-Durstenfeld Shuffle  
        Knuth 和 Durstenfeld  在Fisher 等人的基础上对算法进行了改进，在原始数组上对数字进行交互，省去了额外O(n)的空间。该算法的基本思想和 Fisher 类似，每次从未处理的数据中随机取出一个数字，然后把该数字放在数组的尾部，即数组尾部存放的是已经处理过的数字。
@@ -214,7 +213,7 @@
              7. 将 arr 的倒数第二个元素和下标为 x 的元素互换；
                 ……
              如上，直到输出 m 个数为止
-</code></pre><p>该算法是经典洗牌算法。它的proof如下：<br>对于arr[i],洗牌后在第n-1个位置的概率是1/n（第一次交换的随机数为i）<br>在n-2个位置概率是[(n-1)/n] <em> [1/(n-1)] = 1/n，（第一次交换的随机数不为i，第二次为arr[i]所在的位置（注意，若i=n-1，第一交换arr[n-1]会被换到一个随机的位置））<br>在第n-k个位置的概率是[(n-1)/n] </em> [(n-2)/(n-1)] <em>…</em> [(n-k+1)/(n-k+2)] *[1/(n-k+1)] = 1/n<br>（第一个随机数不要为i，第二次不为arr[i]所在的位置(随着交换有可能会变)……第n-k次为arr[i]所在的位置）.<br><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">void Knuth_Durstenfeld_Shuffle(vector&lt;int&gt;&amp;arr)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="hljs-keyword">for</span> (int i=arr.size()-1;i&gt;=0;--i)</span><br><span class="line">	&#123;</span><br><span class="line">		srand((unsigned)time(NULL));</span><br><span class="line">		swap(arr[rand()%(i+1)],arr[i]);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+</code></pre><p>该算法是经典洗牌算法。它的proof如下：<br>对于arr[i],洗牌后在第n-1个位置的概率是1/n（第一次交换的随机数为i）<br>在n-2个位置概率是[(n-1)/n] <em> [1/(n-1)] = 1/n，（第一次交换的随机数不为i，第二次为arr[i]所在的位置（注意，若i=n-1，第一交换arr[n-1]会被换到一个随机的位置））<br>在第n-k个位置的概率是[(n-1)/n] </em> [(n-2)/(n-1)] <em>…</em> [(n-k+1)/(n-k+2)] *[1/(n-k+1)] = 1/n<br>（第一个随机数不要为i，第二次不为arr[i]所在的位置(随着交换有可能会变)……第n-k次为arr[i]所在的位置）.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">void Knuth_Durstenfeld_Shuffle(vector&lt;int&gt;&amp;arr)</span><br><span class="line">&#123;</span><br><span class="line">	<span class="keyword">for</span> (int i=arr.size()-1;i&gt;=0;--i)</span><br><span class="line">	&#123;</span><br><span class="line">		srand((unsigned)time(NULL));</span><br><span class="line">		swap(arr[rand()%(i+1)],arr[i]);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <pre><code>时间复杂度为O(n),空间复杂度为O(1),缺点必须知道数组长度n.
 </code></pre><p>原始数组被修改了，这是一个原地打乱顺序的算法，算法时间复杂度也从Fisher算法的 O(n2)提升到了O(n)。由于是从后往前扫描，无法处理不知道长度或动态增长的数组。</p>
 <pre><code>2.3 Inside-Out Algorithm
@@ -223,19 +222,19 @@
 
    如果知道arr的lengh的话，可以改为for循环，由于是从前往后遍历，所以可以应对arr[]数目未知的情况，或者arr[]是一个动态增加的情况。
 </code></pre><p>证明如下：<br>原数组的第 i 个元素（随机到的数）在新数组的前 i 个位置的概率都是：(1/i) <em> [i/(i+1)] </em> [(i+1)/(i+2)] <em>…</em> [(n-1)/n] = 1/n，（即第i次刚好随机放到了该位置，在后面的n-i 次选择中该数字不被选中）。<br>原数组的第 i 个元素（随机到的数）在新数组的 i+1 （包括i + 1）以后的位置（假设是第k个位置）的概率是：(1/k) <em> [k/(k+1)] </em> [(k+1)/(k+2)] <em>…</em> [(n-1)/n] = 1/n（即第k次刚好随机放到了该位置，在后面的n-k次选择中该数字不被选中）。         </p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">void Inside_Out_Shuffle(const vector&lt;int&gt;&amp;arr,vector&lt;int&gt;&amp; res)</span><br><span class="line">&#123;</span><br><span class="line">	res.assign(arr.size(),0);</span><br><span class="line">	copy(arr.begin(),arr.end(),res.begin());</span><br><span class="line">	int k;</span><br><span class="line">	<span class="hljs-keyword">for</span> (int i=0;i&lt;arr.size();++i)</span><br><span class="line">	&#123;</span><br><span class="line">		srand((unsigned)time(NULL));</span><br><span class="line">		k=rand()%(i+1);</span><br><span class="line">		res[i]=res[k];</span><br><span class="line">		res[k]=arr[i];</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">void Inside_Out_Shuffle(const vector&lt;int&gt;&amp;arr,vector&lt;int&gt;&amp; res)</span><br><span class="line">&#123;</span><br><span class="line">	res.assign(arr.size(),0);</span><br><span class="line">	copy(arr.begin(),arr.end(),res.begin());</span><br><span class="line">	int k;</span><br><span class="line">	<span class="keyword">for</span> (int i=0;i&lt;arr.size();++i)</span><br><span class="line">	&#123;</span><br><span class="line">		srand((unsigned)time(NULL));</span><br><span class="line">		k=rand()%(i+1);</span><br><span class="line">		res[i]=res[k];</span><br><span class="line">		res[k]=arr[i];</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <pre><code>时间复杂度为O(n),空间复杂度为O(n). 
  2.4 蓄水池抽样
          从N个元素中随机等概率取出k个元素，N长度未知。它能够在o（n）时间内对n个数据进行等概率随机抽取。如果数据集合的量特别大或者还在增长（相当于未知数据集合总量），该算法依然可以等概率抽样.
         伪代码：
-</code></pre><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Init : a reservoir with the size： k  </span><br><span class="line">        <span class="hljs-keyword">for</span>    i= k+1 to N  </span><br><span class="line">            M=random(1, i);  </span><br><span class="line">            <span class="hljs-keyword">if</span>( M &lt; k)  </span><br><span class="line">                 SWAP the Mth value and ith value  </span><br><span class="line">       end <span class="hljs-keyword">for</span></span><br></pre></td></tr></table></figure>
+</code></pre><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Init : a reservoir with the size： k  </span><br><span class="line">        <span class="keyword">for</span>    i= k+1 to N  </span><br><span class="line">            M=random(1, i);  </span><br><span class="line">            <span class="keyword">if</span>( M &lt; k)  </span><br><span class="line">                 SWAP the Mth value and ith value  </span><br><span class="line">       end <span class="keyword">for</span></span><br></pre></td></tr></table></figure>
 <p>上述伪代码的意思是：先选中第1到k个元素，作为被选中的元素。然后依次对第k+1至第N个元素做如下操作：<br>每个元素都有k/x的概率被选中，然后等概率的（1/k）替换掉被选中的元素。其中x是元素的序号。</p>
 <p>proof：<br>每次都是以 k/i 的概率来选择<br>例: k=1000的话， 从1001开始作选择，1001被选中的概率是1000/1001，1002被选中的概率是1000/1002，与我们直觉是相符的。<br>接下来证明：<br>假设当前是i+1, 按照我们的规定，i+1这个元素被选中的概率是k/i+1，也即第 i+1 这个元素在蓄水池中出现的概率是k/i+1<br>此时考虑前i个元素，如果前i个元素出现在蓄水池中的概率都是k/i+1的话，说明我们的算法是没有问题的。 </p>
 <p>对这个问题可以用归纳法来证明：k &lt; i &lt;=N<br>1.当i=k+1的时候，蓄水池的容量为k，第k+1个元素被选择的概率明显为k/(k+1), 此时前k个元素出现在蓄水池的概率为 k/(k+1), 很明显结论成立。<br>2.假设当 j=i 的时候结论成立，此时以 k/i 的概率来选择第i个元素，前i-1个元素出现在蓄水池的概率都为k/i。<br>证明当j=i+1的情况：<br>即需要证明当以 k/i+1 的概率来选择第i+1个元素的时候，此时任一前i个元素出现在蓄水池的概率都为k/(i+1).<br>前i个元素出现在蓄水池的概率有2部分组成, ①在第i+1次选择前得出现在蓄水池中，②得保证第i+1次选择的时候不被替换掉<br>①.由2知道在第i+1次选择前，任一前i个元素出现在蓄水池的概率都为k/i<br>②.考虑被替换的概率：<br>首先要被替换得第 i+1 个元素被选中(不然不用替换了)概率为 k/i+1，其次是因为随机替换的池子中k个元素中任意一个，所以不幸被替换的概率是 1/k，故<br>前i个元素(池中元素)中任一被替换的概率 = k/(i+1) <em> 1/k = 1/i+1<br>则(池中元素中)没有被替换的概率为: 1 - 1/(i+1) = i/i+1<br>综合① ②,通过乘法规则<br>得到前i个元素出现在蓄水池的概率为 k/i </em> i/(i+1) = k/i+1<br>故证明成立<br>如果m被选中，则随机替换水库中的一个对象。最终每个对象被选中的概率均为k/n，证明如下：<br>   证明：第m个对象被选中的概率=选择m的概率<em>（其后元素不被选择的概率+其后元素被选择的概率</em>不替换第m个对象的概率），即</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">void Reservoir_Sampling(vector&lt;int&gt;&amp; arr)</span><br><span class="line">&#123;</span><br><span class="line">	int k;</span><br><span class="line">	<span class="hljs-keyword">for</span> (int i=M;i&lt;arr.size();++i)</span><br><span class="line">	&#123;</span><br><span class="line">		srand((unsigned)time(NULL));</span><br><span class="line">		k=rand()%(i+1);</span><br><span class="line">		<span class="hljs-keyword">if</span> (k&lt;M)</span><br><span class="line">			swap(arr[k],arr[i]); </span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">void Reservoir_Sampling(vector&lt;int&gt;&amp; arr)</span><br><span class="line">&#123;</span><br><span class="line">	int k;</span><br><span class="line">	<span class="keyword">for</span> (int i=M;i&lt;arr.size();++i)</span><br><span class="line">	&#123;</span><br><span class="line">		srand((unsigned)time(NULL));</span><br><span class="line">		k=rand()%(i+1);</span><br><span class="line">		<span class="keyword">if</span> (k&lt;M)</span><br><span class="line">			swap(arr[k],arr[i]); </span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>因此，蓄水池抽样因为不需知道n的长度，可用于机器学习的数据集的划分，等概率随机抽样分为测试集和训练集。</p>
 <hr>
-<p>作者：lyz_cs<br>来源：CSDN<br>原文：<a href="https://blog.csdn.net/qq_26399665/article/details/79831490" target="_blank" rel="noopener">https://blog.csdn.net/qq_26399665/article/details/79831490</a><br>版权声明：本文为博主原创文章，转载请附上博文链接！</p>
+<p>作者：lyz_cs<br>来源：CSDN<br>原文：<a href="https://blog.csdn.net/qq_26399665/article/details/79831490">https://blog.csdn.net/qq_26399665/article/details/79831490</a><br>版权声明：本文为博主原创文章，转载请附上博文链接！</p>
 
         </div>
         
@@ -263,11 +262,12 @@
 <div class="card widget">
     <div class="card-content">
         <nav class="level">
-            <div class="level-item has-text-centered">
+            <div class="level-item has-text-centered" style="flex-shrink: 1">
                 <div>
                     
-                        <img class="image is-128x128 has-mb-6" src="/images/xgnb.jpg" alt="Doctor-Do">
-                    
+                    <figure class="image is-128x128 has-mb-6">
+                        <img class="" src="/images/xgnb.jpg" alt="Doctor-Do">
+                    </figure>
                     
                     <p class="is-size-4 is-block">
                         Doctor-Do
@@ -281,7 +281,7 @@
                     
                     <p class="is-size-6 is-flex is-flex-center has-text-grey">
                         <i class="fas fa-map-marker-alt has-mr-7"></i>
-                        <span>WuHan,Hubei</span>
+                        <span>Kunshan,Jiangsu</span>
                     </p>
                     
                 </div>
@@ -293,9 +293,11 @@
                     <p class="heading">
                         文章
                     </p>
-                    <p class="title has-text-weight-normal">
-                        15
-                    </p>
+                    <a href="/archives">
+                        <p class="title has-text-weight-normal">
+                            16
+                        </p>
+                    </a>
                 </div>
             </div>
             <div class="level-item has-text-centered is-marginless">
@@ -303,9 +305,11 @@
                     <p class="heading">
                         分类
                     </p>
-                    <p class="title has-text-weight-normal">
-                        4
-                    </p>
+                    <a href="/categories">
+                        <p class="title has-text-weight-normal">
+                            4
+                        </p>
+                    </a>
                 </div>
             </div>
             <div class="level-item has-text-centered is-marginless">
@@ -313,45 +317,54 @@
                     <p class="heading">
                         标签
                     </p>
-                    <p class="title has-text-weight-normal">
-                        21
-                    </p>
+                    <a href="/tags">
+                        <p class="title has-text-weight-normal">
+                            21
+                        </p>
+                    </a>
                 </div>
             </div>
         </nav>
+        
         <div class="level">
-            <a class="level-item button is-link is-rounded" href="https://weibo.com/5266102403/profile?topnav=1&amp;wvr=6&amp;is_all=1" target="_blank">
+            <a class="level-item button is-link is-rounded" href="https://weibo.com/5266102403/profile?topnav=1&amp;wvr=6&amp;is_all=1" target="_blank" rel="noopener">
                 关注我</a>
         </div>
         
         
+        
         <div class="level is-mobile">
             
-            <a class="level-item button is-white is-marginless" target="_blank" title="Github" href="https://github.com/Doctor-Do">
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="Github" href="https://github.com/Doctor-Do">
                 
                 <i class="fab fa-github"></i>
                 
             </a>
             
-            <a class="level-item button is-white is-marginless" target="_blank" title="Facebook" href="http://facebook.com">
-                
-                <i class="fab fa-facebook"></i>
-                
-            </a>
-            
-            <a class="level-item button is-white is-marginless" target="_blank" title="Weibo" href="https://weibo.com/5266102403">
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="Weibo" href="https://weibo.com/5266102403">
                 
                 <i class="fab fa-weibo"></i>
                 
             </a>
             
-            <a class="level-item button is-white is-marginless" target="_blank" title="QQ" href="http://qq.com">
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="Twitter" href="https://twitter.com/doctordo11">
+                
+                <i class="fab fa-twitter"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="QQ" href="http://qq.com">
                 
                 <i class="fab fa-qq"></i>
                 
             </a>
             
-            <a class="level-item button is-white is-marginless" target="_blank" title="RSS" href="/">
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="RSS" href="/">
                 
                 <i class="fas fa-rss"></i>
                 
@@ -364,9 +377,7 @@
     
         
     
-        
-
-<div class="card widget">
+        <div class="card widget">
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
@@ -375,18 +386,18 @@
         <ul class="menu-list">
         
             <li>
-                <a class="level is-mobile" href="https://acatcher.club" target="_blank">
+                <a class="level is-mobile" href="https://aseeker.xyz/" target="_blank" rel="noopener">
                     <span class="level-left">
                         <span class="level-item">Yzx&#39;sblog</span>
                     </span>
                     <span class="level-right">
-                        <span class="level-item tag">acatcher.club</span>
+                        <span class="level-item tag">aseeker.xyz</span>
                     </span>
                 </a>
             </li>
         
             <li>
-                <a class="level is-mobile" href="https://github.com/ppoffice" target="_blank">
+                <a class="level is-mobile" href="https://github.com/ppoffice" target="_blank" rel="noopener">
                     <span class="level-left">
                         <span class="level-item">PPOffice</span>
                     </span>
@@ -400,7 +411,6 @@
         </div>
     </div>
 </div>
-
 
     
         
@@ -433,7 +443,7 @@
                 <span class="level-item">杂谈</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">1</span>
+                <span class="level-item tag">2</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/测试/">
@@ -449,26 +459,42 @@
     </div>
 </div>
     
-        
-<div class="card widget">
+        <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/C/" style="font-size: 16.67px;">C++</a> <a href="/tags/DFS/" style="font-size: 10px;">DFS</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/N叉树/" style="font-size: 10px;">N叉树</a> <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/n叉树/" style="font-size: 10px;">n叉树</a> <a href="/tags/二叉搜索树/" style="font-size: 10px;">二叉搜索树</a> <a href="/tags/位运算/" style="font-size: 10px;">位运算</a> <a href="/tags/前缀树/" style="font-size: 10px;">前缀树</a> <a href="/tags/动态规划/" style="font-size: 20px;">动态规划</a> <a href="/tags/双指针/" style="font-size: 13.33px;">双指针</a> <a href="/tags/合并排序/" style="font-size: 10px;">合并排序</a> <a href="/tags/回溯/" style="font-size: 10px;">回溯</a> <a href="/tags/字符串/" style="font-size: 10px;">字符串</a> <a href="/tags/排序搜索/" style="font-size: 10px;">排序搜索</a> <a href="/tags/数组/" style="font-size: 16.67px;">数组</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a> <a href="/tags/贪心算法/" style="font-size: 10px;">贪心算法</a> <a href="/tags/递归迭代/" style="font-size: 10px;">递归迭代</a> <a href="/tags/链表/" style="font-size: 10px;">链表</a> <a href="/tags/随便写写/" style="font-size: 10px;">随便写写</a>
+        <a href="/tags/C/" style="font-size: 16.67px;">C++</a> <a href="/tags/DFS/" style="font-size: 10px;">DFS</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/N叉树/" style="font-size: 10px;">N叉树</a> <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/n叉树/" style="font-size: 10px;">n叉树</a> <a href="/tags/二叉搜索树/" style="font-size: 10px;">二叉搜索树</a> <a href="/tags/位运算/" style="font-size: 10px;">位运算</a> <a href="/tags/前缀树/" style="font-size: 10px;">前缀树</a> <a href="/tags/动态规划/" style="font-size: 20px;">动态规划</a> <a href="/tags/双指针/" style="font-size: 13.33px;">双指针</a> <a href="/tags/合并排序/" style="font-size: 10px;">合并排序</a> <a href="/tags/回溯/" style="font-size: 10px;">回溯</a> <a href="/tags/字符串/" style="font-size: 10px;">字符串</a> <a href="/tags/排序搜索/" style="font-size: 10px;">排序搜索</a> <a href="/tags/数组/" style="font-size: 16.67px;">数组</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a> <a href="/tags/贪心算法/" style="font-size: 10px;">贪心算法</a> <a href="/tags/递归迭代/" style="font-size: 10px;">递归迭代</a> <a href="/tags/链表/" style="font-size: 10px;">链表</a> <a href="/tags/随便写写/" style="font-size: 13.33px;">随便写写</a>
     </div>
 </div>
-
     
     
         <div class="column-right-shadow is-hidden-widescreen ">
         
-            
-<div class="card widget">
+            <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
             最新文章
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2020/01/16/200116/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/gallery/shinan.jpg" alt="写在2020的话">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-16T15:11:14.000Z">2020-01-16</time></div>
+                    <a href="/2020/01/16/200116/" class="title has-link-black-ter is-size-6 has-text-weight-normal">写在2020的话</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/杂谈/">杂谈</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -481,7 +507,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-09T12:54:47.000Z">2019-05-09</time></div>
-                    <a href="/2019/05/09/190509/" class="has-link-black-ter is-size-6">5.9 LeetCode</a>
+                    <a href="/2019/05/09/190509/" class="title has-link-black-ter is-size-6 has-text-weight-normal">5.9 LeetCode</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
                     </p>
@@ -500,7 +526,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-08T08:43:06.000Z">2019-05-08</time></div>
-                    <a href="/2019/05/08/190508/" class="has-link-black-ter is-size-6">5.8 LeetCode</a>
+                    <a href="/2019/05/08/190508/" class="title has-link-black-ter is-size-6 has-text-weight-normal">5.8 LeetCode</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
                     </p>
@@ -519,7 +545,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-07T13:15:33.000Z">2019-05-07</time></div>
-                    <a href="/2019/05/07/190507/" class="has-link-black-ter is-size-6">5.7LeetCode</a>
+                    <a href="/2019/05/07/190507/" class="title has-link-black-ter is-size-6 has-text-weight-normal">5.7LeetCode</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
                     </p>
@@ -538,26 +564,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-05T12:41:10.000Z">2019-05-05</time></div>
-                    <a href="/2019/05/05/190505/" class="has-link-black-ter is-size-6">5.5LeetCode</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/05/04/190504/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/Italy.jpg" alt="190504">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-04T10:18:56.000Z">2019-05-04</time></div>
-                    <a href="/2019/05/04/190504/" class="has-link-black-ter is-size-6">190504</a>
+                    <a href="/2019/05/05/190505/" class="title has-link-black-ter is-size-6 has-text-weight-normal">5.5LeetCode</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
                     </p>
@@ -567,7 +574,6 @@
         
     </div>
 </div>
-
         
             <div class="card widget">
     <div class="card-content">
@@ -576,6 +582,17 @@
             归档
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/01/">
+                <span class="level-start">
+                    <span class="level-item">一月 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2019/05/">
@@ -755,7 +772,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/随便写写/">
                         <span class="tag">随便写写</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -775,12 +792,30 @@
 
 <div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right ">
     
-        
-<div class="card widget">
+        <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
             最新文章
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2020/01/16/200116/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/gallery/shinan.jpg" alt="写在2020的话">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-16T15:11:14.000Z">2020-01-16</time></div>
+                    <a href="/2020/01/16/200116/" class="title has-link-black-ter is-size-6 has-text-weight-normal">写在2020的话</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/杂谈/">杂谈</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -793,7 +828,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-09T12:54:47.000Z">2019-05-09</time></div>
-                    <a href="/2019/05/09/190509/" class="has-link-black-ter is-size-6">5.9 LeetCode</a>
+                    <a href="/2019/05/09/190509/" class="title has-link-black-ter is-size-6 has-text-weight-normal">5.9 LeetCode</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
                     </p>
@@ -812,7 +847,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-08T08:43:06.000Z">2019-05-08</time></div>
-                    <a href="/2019/05/08/190508/" class="has-link-black-ter is-size-6">5.8 LeetCode</a>
+                    <a href="/2019/05/08/190508/" class="title has-link-black-ter is-size-6 has-text-weight-normal">5.8 LeetCode</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
                     </p>
@@ -831,7 +866,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-07T13:15:33.000Z">2019-05-07</time></div>
-                    <a href="/2019/05/07/190507/" class="has-link-black-ter is-size-6">5.7LeetCode</a>
+                    <a href="/2019/05/07/190507/" class="title has-link-black-ter is-size-6 has-text-weight-normal">5.7LeetCode</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
                     </p>
@@ -850,26 +885,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-05T12:41:10.000Z">2019-05-05</time></div>
-                    <a href="/2019/05/05/190505/" class="has-link-black-ter is-size-6">5.5LeetCode</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/05/04/190504/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/Italy.jpg" alt="190504">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-04T10:18:56.000Z">2019-05-04</time></div>
-                    <a href="/2019/05/04/190504/" class="has-link-black-ter is-size-6">190504</a>
+                    <a href="/2019/05/05/190505/" class="title has-link-black-ter is-size-6 has-text-weight-normal">5.5LeetCode</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
                     </p>
@@ -879,7 +895,6 @@
         
     </div>
 </div>
-
     
         <div class="card widget">
     <div class="card-content">
@@ -888,6 +903,17 @@
             归档
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/01/">
+                <span class="level-start">
+                    <span class="level-item">一月 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2019/05/">
@@ -1067,7 +1093,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/随便写写/">
                         <span class="tag">随便写写</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -1092,22 +1118,18 @@
                 
                 </a>
                 <p class="is-size-7">
-                &copy; 2019 Doctor-Do&nbsp;
-                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a href="http://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                &copy; 2020 Doctor-Do&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> & <a
+                        href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a>
                 
                 </p>
             </div>
-	      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次 &nbsp;   </span>
-<span id="busuanzi_container_site_uv">访客数<span id="busuanzi_value_site_uv"></span>人次</span>
-	
             <div class="level-end">
             
                 <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
                 
-                
                 <p class="control">
-                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                    <a class="button is-white is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/">
                         
                         <i class="fab fa-creative-commons"></i>
                         
@@ -1115,7 +1137,7 @@
                 </p>
                 
                 <p class="control">
-                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                    <a class="button is-white is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
                         
                         <i class="fab fa-creative-commons-by"></i>
                         
@@ -1123,7 +1145,7 @@
                 </p>
                 
                 <p class="control">
-                    <a class="button is-white is-large" target="_blank" title="Download on GitHub" href="http://github.com/ppoffice/hexo-theme-icarus">
+                    <a class="button is-white is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
                         
                         <i class="fab fa-github"></i>
                         
@@ -1141,22 +1163,37 @@
 <script>moment.locale("zh-CN");</script>
 
 
-    
-    
-    
-    <script src="/js/animation.js"></script>
-    
+<script>
+var IcarusThemeSettings = {
+    site: {
+        url: 'http://doctordo.cn',
+        external_link: {"enable":true,"exclude":[]}
+    },
+    article: {
+        highlight: {
+            clipboard: true,
+            fold: 'unfolded'
+        }
+    }
+};
+</script>
 
-    
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
-    <script src="/js/gallery.js" defer></script>
-    
 
-    
-    
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+
+
+
+
+
+<script src="/js/animation.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+<script src="/js/gallery.js" defer></script>
+
+
 
 <div id="outdated">
     <h6>Your browser is out-of-date!</h6>
@@ -1176,8 +1213,6 @@
 </script>
 
 
-    
-    
 <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -1201,8 +1236,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
-    
-    
 
 <a id="back-to-top" title="回到顶端" href="javascript:;">
     <i class="fas fa-chevron-up"></i>
@@ -1210,23 +1243,16 @@ document.addEventListener('DOMContentLoaded', function () {
 <script src="/js/back-to-top.js" defer></script>
 
 
-    
-    
-    
-    
 
-    
-    
-    
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
-    <script src="/js/clipboard.js" defer></script>
-    
 
-    
-    
-    
+
+
+
+
+
+
+
+
 
 
 <script src="/js/main.js" defer></script>
@@ -1235,7 +1261,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="searchbox ins-search">
     <div class="searchbox-container ins-search-container">
         <div class="searchbox-input-wrapper">
-            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么...">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么..." />
             <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="searchbox-result-wrapper ins-section-wrapper">

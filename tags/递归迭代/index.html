@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html lang="zh">
-<head><meta name="generator" content="Hexo 3.8.0">
-    <meta charset="utf-8">
+<html  lang="zh">
+<head>
+    <meta charset="utf-8" />
+
+<meta name="generator" content="Hexo 3.8.0" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
 <title>标签: 递归迭代 - 江湖小虾米</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
-
-    <meta property="og:type" content="website">
+    <meta name="description" content="This is a personal blog contributed by wxm in 2019. I just use this to record my life. I&apos;ll update anthing I like on this website from time to time.">
+<meta name="keywords" content="infinite world">
+<meta property="og:type" content="website">
 <meta property="og:title" content="江湖小虾米">
 <meta property="og:url" content="http://doctordo.cn/tags/递归迭代/index.html">
 <meta property="og:site_name" content="江湖小虾米">
+<meta property="og:description" content="This is a personal blog contributed by wxm in 2019. I just use this to record my life. I&apos;ll update anthing I like on this website from time to time.">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://doctordo.cn/images/og_image.png">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="江湖小虾米">
+<meta name="twitter:description" content="This is a personal blog contributed by wxm in 2019. I just use this to record my life. I&apos;ll update anthing I like on this website from time to time.">
 <meta name="twitter:image" content="http://doctordo.cn/images/og_image.png">
 
 
@@ -34,45 +41,32 @@
 
     
     
-    
-    <style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
-    
+<style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
 
     
     
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
-    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
 
     
     
-
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
 
-
     
     
     
     
-
 <link rel="stylesheet" href="/css/back-to-top.css">
 
-
     
     
     
     
-
     
     
-<link rel="stylesheet" href="/css/progressbar.css">
+    
+    <link rel="stylesheet" href="/css/progressbar.css">
 <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
-
-    
-    
-    
-
     
     
     
@@ -94,23 +88,27 @@
             
             <div class="navbar-start">
                 
-                <a class="navbar-item" href="/">Home</a>
+                <a class="navbar-item"
+                href="/">Home</a>
                 
-                <a class="navbar-item" href="/archives">Archives</a>
+                <a class="navbar-item"
+                href="/archives">Archives</a>
                 
-                <a class="navbar-item" href="/categories">Categories</a>
+                <a class="navbar-item"
+                href="/categories">Categories</a>
                 
-                <a class="navbar-item" href="/tags">Tags</a>
+                <a class="navbar-item"
+                href="/tags">Tags</a>
                 
-                <a class="navbar-item" href="/about">About</a>
+                <a class="navbar-item"
+                href="/about">About</a>
                 
             </div>
             
             <div class="navbar-end">
                 
                     
-                    
-                    <a class="navbar-item" target="_blank" title="Download on GitHub" href="http://github.com/ppoffice/hexo-theme-icarus">
+                    <a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
                         
                         <i class="fab fa-github"></i>
                         
@@ -142,7 +140,8 @@
     </div>
 </div>
 
-    <div class="card">
+    
+<div class="card">
     
     <div class="card-image">
         <a href="/2019/04/26/190426/" class="image is-7by1">
@@ -177,23 +176,23 @@
             
         </h1>
         <div class="content">
-            <h3 id="590-N-ary-Tree-Postorder-Traversal"><a href="#590-N-ary-Tree-Postorder-Traversal" class="headerlink" title="590. N-ary Tree Postorder Traversal"></a><a href="https://leetcode-cn.com/problems/n-ary-tree-postorder-traversal/" target="_blank" rel="noopener">590. N-ary Tree Postorder Traversal</a></h3><p>N叉树的后序遍历<br>解法一：递归<br><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">/*</span><br><span class="line">// Definition <span class="hljs-keyword">for</span> a Node.</span><br><span class="line">class Node &#123;</span><br><span class="line">public:</span><br><span class="line">    int val;</span><br><span class="line">    vector&lt;Node*&gt; children;</span><br><span class="line"></span><br><span class="line">    <span class="hljs-function"><span class="hljs-title">Node</span></span>() &#123;&#125;</span><br><span class="line"></span><br><span class="line">    Node(int _val, vector&lt;Node*&gt; _children) &#123;</span><br><span class="line">        val = _val;</span><br><span class="line">        children = _children;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">*/</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;int&gt; postorder(Node* root) &#123;</span><br><span class="line">        vector&lt;int&gt; res;</span><br><span class="line">        <span class="hljs-built_in">help</span>(root,res);</span><br><span class="line">        <span class="hljs-built_in">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">    void <span class="hljs-built_in">help</span>(Node* p,vector&lt;int&gt;&amp; res)&#123;</span><br><span class="line">        <span class="hljs-keyword">if</span>(!p) <span class="hljs-built_in">return</span> ;</span><br><span class="line">        <span class="hljs-keyword">for</span>(auto i:p-&gt;children)</span><br><span class="line">            <span class="hljs-built_in">help</span>(i,res);</span><br><span class="line">        res.push_back(p-&gt;val);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+            <h3 id="590-N-ary-Tree-Postorder-Traversal"><a href="#590-N-ary-Tree-Postorder-Traversal" class="headerlink" title="590. N-ary Tree Postorder Traversal"></a><a href="https://leetcode-cn.com/problems/n-ary-tree-postorder-traversal/">590. N-ary Tree Postorder Traversal</a></h3><p>N叉树的后序遍历<br>解法一：递归<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">/*</span><br><span class="line">// Definition <span class="keyword">for</span> a Node.</span><br><span class="line">class Node &#123;</span><br><span class="line">public:</span><br><span class="line">    int val;</span><br><span class="line">    vector&lt;Node*&gt; children;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="title">Node</span></span>() &#123;&#125;</span><br><span class="line"></span><br><span class="line">    Node(int _val, vector&lt;Node*&gt; _children) &#123;</span><br><span class="line">        val = _val;</span><br><span class="line">        children = _children;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">*/</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;int&gt; postorder(Node* root) &#123;</span><br><span class="line">        vector&lt;int&gt; res;</span><br><span class="line">        <span class="built_in">help</span>(root,res);</span><br><span class="line">        <span class="built_in">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">    void <span class="built_in">help</span>(Node* p,vector&lt;int&gt;&amp; res)&#123;</span><br><span class="line">        <span class="keyword">if</span>(!p) <span class="built_in">return</span> ;</span><br><span class="line">        <span class="keyword">for</span>(auto i:p-&gt;children)</span><br><span class="line">            <span class="built_in">help</span>(i,res);</span><br><span class="line">        res.push_back(p-&gt;val);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
 <p>解法二：迭代我们也可以使用迭代的方法来做，这里有个小trick，写法跟先序遍历十分的像，不同的就是每次把从stack中取的结点的值都加到结果res的最前面，还有就是遍历子结点数组的顺序是正常的顺序，而前序遍历是从子结点数组的后面往前面遍历，这点区别一定要注意。</p>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;int&gt; postorder(Node* root) &#123;</span><br><span class="line">        vector&lt;int&gt; res;</span><br><span class="line">        <span class="hljs-built_in">help</span>(root,res);</span><br><span class="line">        <span class="hljs-built_in">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">    void <span class="hljs-built_in">help</span>(Node* p,vector&lt;int&gt;&amp; res)&#123;</span><br><span class="line">        <span class="hljs-keyword">if</span>(!p) <span class="hljs-built_in">return</span> ;</span><br><span class="line">        <span class="hljs-keyword">for</span>(auto i:p-&gt;children)</span><br><span class="line">            <span class="hljs-built_in">help</span>(i,res);</span><br><span class="line">        res.push_back(p-&gt;val);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h3 id="429-N-ary-Tree-Level-Order-Traversal"><a href="#429-N-ary-Tree-Level-Order-Traversal" class="headerlink" title="429. N-ary Tree Level Order Traversal"></a><a href="https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/" target="_blank" rel="noopener">429. N-ary Tree Level Order Traversal</a></h3><p>层次遍历，没啥好说的。<br><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;vector&lt;int&gt;&gt; levelOrder(Node* root) &#123;</span><br><span class="line">        vector&lt;vector&lt;int&gt;&gt; res;</span><br><span class="line">        <span class="hljs-keyword">if</span>(!root) <span class="hljs-built_in">return</span> res;</span><br><span class="line">        deque&lt;Node*&gt; temp;</span><br><span class="line">        temp.push_back(root);</span><br><span class="line">        <span class="hljs-keyword">while</span>(!temp.empty())&#123;</span><br><span class="line">            int size=temp.size();</span><br><span class="line">            vector&lt;int&gt; t;</span><br><span class="line">            <span class="hljs-keyword">for</span>(int i=0;i&lt;size;i++)&#123;</span><br><span class="line">                auto it=temp.front();</span><br><span class="line">                temp.pop_front();</span><br><span class="line">                t.push_back(it-&gt;val);</span><br><span class="line">                <span class="hljs-keyword">for</span>(auto j:it-&gt;children)</span><br><span class="line">                    temp.push_back(j);</span><br><span class="line">            &#125;</span><br><span class="line">            res.push_back(t);</span><br><span class="line">            t.clear();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-built_in">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
-<h3 id="559-Maximum-Depth-of-N-ary-Tree"><a href="#559-Maximum-Depth-of-N-ary-Tree" class="headerlink" title="559. Maximum Depth of N-ary Tree"></a><a href="https://leetcode-cn.com/problems/maximum-depth-of-n-ary-tree/" target="_blank" rel="noopener">559. Maximum Depth of N-ary Tree</a></h3><ol start="559">
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;int&gt; postorder(Node* root) &#123;</span><br><span class="line">        vector&lt;int&gt; res;</span><br><span class="line">        <span class="built_in">help</span>(root,res);</span><br><span class="line">        <span class="built_in">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">    void <span class="built_in">help</span>(Node* p,vector&lt;int&gt;&amp; res)&#123;</span><br><span class="line">        <span class="keyword">if</span>(!p) <span class="built_in">return</span> ;</span><br><span class="line">        <span class="keyword">for</span>(auto i:p-&gt;children)</span><br><span class="line">            <span class="built_in">help</span>(i,res);</span><br><span class="line">        res.push_back(p-&gt;val);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h3 id="429-N-ary-Tree-Level-Order-Traversal"><a href="#429-N-ary-Tree-Level-Order-Traversal" class="headerlink" title="429. N-ary Tree Level Order Traversal"></a><a href="https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/">429. N-ary Tree Level Order Traversal</a></h3><p>层次遍历，没啥好说的。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    vector&lt;vector&lt;int&gt;&gt; levelOrder(Node* root) &#123;</span><br><span class="line">        vector&lt;vector&lt;int&gt;&gt; res;</span><br><span class="line">        <span class="keyword">if</span>(!root) <span class="built_in">return</span> res;</span><br><span class="line">        deque&lt;Node*&gt; temp;</span><br><span class="line">        temp.push_back(root);</span><br><span class="line">        <span class="keyword">while</span>(!temp.empty())&#123;</span><br><span class="line">            int size=temp.size();</span><br><span class="line">            vector&lt;int&gt; t;</span><br><span class="line">            <span class="keyword">for</span>(int i=0;i&lt;size;i++)&#123;</span><br><span class="line">                auto it=temp.front();</span><br><span class="line">                temp.pop_front();</span><br><span class="line">                t.push_back(it-&gt;val);</span><br><span class="line">                <span class="keyword">for</span>(auto j:it-&gt;children)</span><br><span class="line">                    temp.push_back(j);</span><br><span class="line">            &#125;</span><br><span class="line">            res.push_back(t);</span><br><span class="line">            t.clear();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<h3 id="559-Maximum-Depth-of-N-ary-Tree"><a href="#559-Maximum-Depth-of-N-ary-Tree" class="headerlink" title="559. Maximum Depth of N-ary Tree"></a><a href="https://leetcode-cn.com/problems/maximum-depth-of-n-ary-tree/">559. Maximum Depth of N-ary Tree</a></h3><ol start="559">
 <li>N叉树的最大深度</li>
 </ol>
-<p>递归非常简单。。没啥好说的<br><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int maxDepth(Node* root) &#123;</span><br><span class="line">        int res=0;</span><br><span class="line">        <span class="hljs-built_in">help</span>(root,0,res);</span><br><span class="line">        <span class="hljs-built_in">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    void <span class="hljs-built_in">help</span>(Node* p,int s,int&amp; res) &#123;</span><br><span class="line">        <span class="hljs-keyword">if</span>(!p)  <span class="hljs-built_in">return</span>;</span><br><span class="line">        s++;</span><br><span class="line">        res=s&gt;res? s:res;</span><br><span class="line">        <span class="hljs-keyword">for</span>(auto it:p-&gt;children)</span><br><span class="line">            <span class="hljs-built_in">help</span>(it,s,res);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
-<h3 id="208-Implement-Trie-Prefix-Tree"><a href="#208-Implement-Trie-Prefix-Tree" class="headerlink" title="208. Implement Trie (Prefix Tree)"></a><a href="https://leetcode-cn.com/problems/implement-trie-prefix-tree/" target="_blank" rel="noopener">208. Implement Trie (Prefix Tree)</a></h3><p>比较简单的medium题了，就是比较繁琐。在定义前缀树的时候要先去检查是否已经存在该结点。感觉还是对map的使用不够熟练。<br><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">class Node &#123;</span><br><span class="line">public:</span><br><span class="line">    bool isWord=<span class="hljs-literal">false</span>;</span><br><span class="line">    unordered_map&lt;char,Node*&gt; next;</span><br><span class="line">    <span class="hljs-function"><span class="hljs-title">Node</span></span>() &#123;</span><br><span class="line">        isWord=<span class="hljs-literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    Node(unordered_map&lt;char,Node*&gt; _next)&#123;</span><br><span class="line">        next=_next;</span><br><span class="line">        isWord=<span class="hljs-literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">class Trie &#123;</span><br><span class="line">public:</span><br><span class="line">    Node* root;</span><br><span class="line">    /** Initialize your data structure here. */</span><br><span class="line">    <span class="hljs-function"><span class="hljs-title">Trie</span></span>() &#123;</span><br><span class="line">        root=new Node();</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    /** Inserts a word into the trie. */</span><br><span class="line">    void insert(string word) &#123;</span><br><span class="line">        Node* temp=root;</span><br><span class="line">        <span class="hljs-keyword">for</span>(int i=0;i&lt;word.length();i++)&#123;</span><br><span class="line">            auto it=temp-&gt;next.find(word[i]);</span><br><span class="line">            <span class="hljs-keyword">if</span>(it==temp-&gt;next.end())&#123;</span><br><span class="line">                temp-&gt;next[word[i]]=new Node();</span><br><span class="line">                temp=temp-&gt;next[word[i]];                </span><br><span class="line">            &#125;<span class="hljs-keyword">else</span> temp=temp-&gt;next[word[i]];</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        temp-&gt;isWord=<span class="hljs-literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    /** Returns <span class="hljs-keyword">if</span> the word is <span class="hljs-keyword">in</span> the trie. */</span><br><span class="line">    bool search(string word) &#123;</span><br><span class="line">        Node* temp=root;</span><br><span class="line">        <span class="hljs-keyword">for</span>(int i=0;i&lt;word.length();i++)&#123;</span><br><span class="line">            auto it=temp-&gt;next.count(word[i]);</span><br><span class="line">            <span class="hljs-keyword">if</span>(!it) <span class="hljs-built_in">return</span> <span class="hljs-literal">false</span>;</span><br><span class="line">            temp=temp-&gt;next[word[i]];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">if</span>(temp-&gt;isWord) <span class="hljs-built_in">return</span> <span class="hljs-literal">true</span>;</span><br><span class="line">        <span class="hljs-built_in">return</span> <span class="hljs-literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    /** Returns <span class="hljs-keyword">if</span> there is any word <span class="hljs-keyword">in</span> the trie that starts with the given prefix. */</span><br><span class="line">    bool startsWith(string prefix) &#123;</span><br><span class="line">        Node* temp=root;</span><br><span class="line">        <span class="hljs-keyword">for</span>(int i=0;i&lt;prefix.length();i++)&#123;</span><br><span class="line">            <span class="hljs-keyword">if</span>(temp-&gt;next.count(prefix[i])==0) <span class="hljs-built_in">return</span> <span class="hljs-literal">false</span>;</span><br><span class="line">            temp=temp-&gt;next[prefix[i]];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-built_in">return</span> <span class="hljs-literal">true</span>;        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
-<h3 id="677-Map-Sum-Pairs"><a href="#677-Map-Sum-Pairs" class="headerlink" title="677. Map Sum Pairs"></a><a href="https://leetcode-cn.com/problems/map-sum-pairs/" target="_blank" rel="noopener">677. Map Sum Pairs</a></h3><ol start="677">
-<li>键值映射<br>和上题类似，区别在于用递归思想求前缀总和。 考虑过在每个结点都写入当前值的方法，但是感觉这样每次插入新结点都需要去更新整个树，复杂度欠缺考虑。<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">class Node&#123;</span><br><span class="line">public:</span><br><span class="line">    int num=0;</span><br><span class="line">    unordered_map&lt;char,Node*&gt; next;</span><br><span class="line">    <span class="hljs-function"><span class="hljs-title">Node</span></span>() &#123;&#125;</span><br><span class="line">    Node(unordered_map&lt;char,Node*&gt; _next)&#123;</span><br><span class="line">        next=_next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">class MapSum &#123;</span><br><span class="line">public:</span><br><span class="line">    Node *root;</span><br><span class="line">    /** Initialize your data structure here. */</span><br><span class="line">    <span class="hljs-function"><span class="hljs-title">MapSum</span></span>() &#123;</span><br><span class="line">        root=new Node();</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    void insert(string key, int val) &#123;</span><br><span class="line">        Node *temp=root;</span><br><span class="line">        <span class="hljs-keyword">for</span>(int i=0;i&lt;key.length();i++)&#123;</span><br><span class="line">            auto it=temp-&gt;next.find(key[i]);</span><br><span class="line">            <span class="hljs-keyword">if</span>(it==temp-&gt;next.end())&#123;</span><br><span class="line">                temp-&gt;next[key[i]]=new Node();</span><br><span class="line">                temp=temp-&gt;next[key[i]];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="hljs-keyword">else</span> temp=temp-&gt;next[key[i]];</span><br><span class="line">        &#125;</span><br><span class="line">        temp-&gt;num=val;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    int sum(string prefix) &#123;</span><br><span class="line">        Node *temp=root;</span><br><span class="line">        <span class="hljs-keyword">for</span>(int i=0;i&lt;prefix.length();i++)&#123;</span><br><span class="line">            auto it=temp-&gt;next.find(prefix[i]);</span><br><span class="line">            <span class="hljs-keyword">if</span>(it==temp-&gt;next.end()) <span class="hljs-built_in">return</span> 0;</span><br><span class="line">            <span class="hljs-keyword">else</span> temp=temp-&gt;next[prefix[i]];            </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-built_in">return</span> <span class="hljs-built_in">help</span>(temp);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    int <span class="hljs-built_in">help</span>(Node *p)&#123;</span><br><span class="line">        int sum=p-&gt;num;</span><br><span class="line">        <span class="hljs-keyword">for</span>(auto it=p-&gt;next.begin();it!=p-&gt;next.end();it++)</span><br><span class="line">            sum+=<span class="hljs-built_in">help</span>(it-&gt;second);</span><br><span class="line">        <span class="hljs-built_in">return</span> sum;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>递归非常简单。。没啥好说的<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int maxDepth(Node* root) &#123;</span><br><span class="line">        int res=0;</span><br><span class="line">        <span class="built_in">help</span>(root,0,res);</span><br><span class="line">        <span class="built_in">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    void <span class="built_in">help</span>(Node* p,int s,int&amp; res) &#123;</span><br><span class="line">        <span class="keyword">if</span>(!p)  <span class="built_in">return</span>;</span><br><span class="line">        s++;</span><br><span class="line">        res=s&gt;res? s:res;</span><br><span class="line">        <span class="keyword">for</span>(auto it:p-&gt;children)</span><br><span class="line">            <span class="built_in">help</span>(it,s,res);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<h3 id="208-Implement-Trie-Prefix-Tree"><a href="#208-Implement-Trie-Prefix-Tree" class="headerlink" title="208. Implement Trie (Prefix Tree)"></a><a href="https://leetcode-cn.com/problems/implement-trie-prefix-tree/">208. Implement Trie (Prefix Tree)</a></h3><p>比较简单的medium题了，就是比较繁琐。在定义前缀树的时候要先去检查是否已经存在该结点。感觉还是对map的使用不够熟练。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">class Node &#123;</span><br><span class="line">public:</span><br><span class="line">    bool isWord=<span class="literal">false</span>;</span><br><span class="line">    unordered_map&lt;char,Node*&gt; next;</span><br><span class="line">    <span class="function"><span class="title">Node</span></span>() &#123;</span><br><span class="line">        isWord=<span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    Node(unordered_map&lt;char,Node*&gt; _next)&#123;</span><br><span class="line">        next=_next;</span><br><span class="line">        isWord=<span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">class Trie &#123;</span><br><span class="line">public:</span><br><span class="line">    Node* root;</span><br><span class="line">    /** Initialize your data structure here. */</span><br><span class="line">    <span class="function"><span class="title">Trie</span></span>() &#123;</span><br><span class="line">        root=new Node();</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    /** Inserts a word into the trie. */</span><br><span class="line">    void insert(string word) &#123;</span><br><span class="line">        Node* temp=root;</span><br><span class="line">        <span class="keyword">for</span>(int i=0;i&lt;word.length();i++)&#123;</span><br><span class="line">            auto it=temp-&gt;next.find(word[i]);</span><br><span class="line">            <span class="keyword">if</span>(it==temp-&gt;next.end())&#123;</span><br><span class="line">                temp-&gt;next[word[i]]=new Node();</span><br><span class="line">                temp=temp-&gt;next[word[i]];                </span><br><span class="line">            &#125;<span class="keyword">else</span> temp=temp-&gt;next[word[i]];</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        temp-&gt;isWord=<span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    /** Returns <span class="keyword">if</span> the word is <span class="keyword">in</span> the trie. */</span><br><span class="line">    bool search(string word) &#123;</span><br><span class="line">        Node* temp=root;</span><br><span class="line">        <span class="keyword">for</span>(int i=0;i&lt;word.length();i++)&#123;</span><br><span class="line">            auto it=temp-&gt;next.count(word[i]);</span><br><span class="line">            <span class="keyword">if</span>(!it) <span class="built_in">return</span> <span class="literal">false</span>;</span><br><span class="line">            temp=temp-&gt;next[word[i]];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(temp-&gt;isWord) <span class="built_in">return</span> <span class="literal">true</span>;</span><br><span class="line">        <span class="built_in">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    /** Returns <span class="keyword">if</span> there is any word <span class="keyword">in</span> the trie that starts with the given prefix. */</span><br><span class="line">    bool startsWith(string prefix) &#123;</span><br><span class="line">        Node* temp=root;</span><br><span class="line">        <span class="keyword">for</span>(int i=0;i&lt;prefix.length();i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(temp-&gt;next.count(prefix[i])==0) <span class="built_in">return</span> <span class="literal">false</span>;</span><br><span class="line">            temp=temp-&gt;next[prefix[i]];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">return</span> <span class="literal">true</span>;        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+<h3 id="677-Map-Sum-Pairs"><a href="#677-Map-Sum-Pairs" class="headerlink" title="677. Map Sum Pairs"></a><a href="https://leetcode-cn.com/problems/map-sum-pairs/">677. Map Sum Pairs</a></h3><ol start="677">
+<li>键值映射<br>和上题类似，区别在于用递归思想求前缀总和。 考虑过在每个结点都写入当前值的方法，但是感觉这样每次插入新结点都需要去更新整个树，复杂度欠缺考虑。<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">class Node&#123;</span><br><span class="line">public:</span><br><span class="line">    int num=0;</span><br><span class="line">    unordered_map&lt;char,Node*&gt; next;</span><br><span class="line">    <span class="function"><span class="title">Node</span></span>() &#123;&#125;</span><br><span class="line">    Node(unordered_map&lt;char,Node*&gt; _next)&#123;</span><br><span class="line">        next=_next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">class MapSum &#123;</span><br><span class="line">public:</span><br><span class="line">    Node *root;</span><br><span class="line">    /** Initialize your data structure here. */</span><br><span class="line">    <span class="function"><span class="title">MapSum</span></span>() &#123;</span><br><span class="line">        root=new Node();</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    void insert(string key, int val) &#123;</span><br><span class="line">        Node *temp=root;</span><br><span class="line">        <span class="keyword">for</span>(int i=0;i&lt;key.length();i++)&#123;</span><br><span class="line">            auto it=temp-&gt;next.find(key[i]);</span><br><span class="line">            <span class="keyword">if</span>(it==temp-&gt;next.end())&#123;</span><br><span class="line">                temp-&gt;next[key[i]]=new Node();</span><br><span class="line">                temp=temp-&gt;next[key[i]];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> temp=temp-&gt;next[key[i]];</span><br><span class="line">        &#125;</span><br><span class="line">        temp-&gt;num=val;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    int sum(string prefix) &#123;</span><br><span class="line">        Node *temp=root;</span><br><span class="line">        <span class="keyword">for</span>(int i=0;i&lt;prefix.length();i++)&#123;</span><br><span class="line">            auto it=temp-&gt;next.find(prefix[i]);</span><br><span class="line">            <span class="keyword">if</span>(it==temp-&gt;next.end()) <span class="built_in">return</span> 0;</span><br><span class="line">            <span class="keyword">else</span> temp=temp-&gt;next[prefix[i]];            </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">return</span> <span class="built_in">help</span>(temp);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    int <span class="built_in">help</span>(Node *p)&#123;</span><br><span class="line">        int sum=p-&gt;num;</span><br><span class="line">        <span class="keyword">for</span>(auto it=p-&gt;next.begin();it!=p-&gt;next.end();it++)</span><br><span class="line">            sum+=<span class="built_in">help</span>(it-&gt;second);</span><br><span class="line">        <span class="built_in">return</span> sum;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 </li>
 </ol>
-<h3 id="648-Replace-Words"><a href="#648-Replace-Words" class="headerlink" title="648. Replace Words"></a><a href="https://leetcode-cn.com/problems/replace-words/" target="_blank" rel="noopener">648. Replace Words</a></h3><ol start="648">
+<h3 id="648-Replace-Words"><a href="#648-Replace-Words" class="headerlink" title="648. Replace Words"></a><a href="https://leetcode-cn.com/problems/replace-words/">648. Replace Words</a></h3><ol start="648">
 <li>单词替换<br>写得有些自闭，不想说话。逻辑不难，主要是对于C++中string类的运用暂时还有所欠缺，特别对于一个长句子的处理。</li>
 </ol>
-<figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br></pre></td><td class="code"><pre><span class="line">class Node &#123;</span><br><span class="line">public:</span><br><span class="line">    bool isWord=<span class="hljs-literal">false</span>;</span><br><span class="line">    unordered_map&lt;char,Node*&gt; next;</span><br><span class="line">    <span class="hljs-function"><span class="hljs-title">Node</span></span>() &#123;</span><br><span class="line">        isWord=<span class="hljs-literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    Node(unordered_map&lt;char,Node*&gt; _next)&#123;</span><br><span class="line">        next=_next;</span><br><span class="line">        isWord=<span class="hljs-literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">class Trie &#123;</span><br><span class="line">public:</span><br><span class="line">    Node* root;</span><br><span class="line">    /** Initialize your data structure here. */</span><br><span class="line">    <span class="hljs-function"><span class="hljs-title">Trie</span></span>() &#123;</span><br><span class="line">        root=new Node();</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    /** Inserts a word into the trie. */</span><br><span class="line">    void insert(string word) &#123;</span><br><span class="line">        Node* temp=root;</span><br><span class="line">        <span class="hljs-keyword">for</span>(int i=0;i&lt;word.length();i++)&#123;</span><br><span class="line">            auto it=temp-&gt;next.find(word[i]);</span><br><span class="line">            <span class="hljs-keyword">if</span>(it==temp-&gt;next.end())&#123;</span><br><span class="line">                temp-&gt;next[word[i]]=new Node();</span><br><span class="line">                temp=temp-&gt;next[word[i]];                </span><br><span class="line">            &#125;<span class="hljs-keyword">else</span> temp=temp-&gt;next[word[i]];</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        temp-&gt;isWord=<span class="hljs-literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    /** Returns <span class="hljs-keyword">if</span> the word is <span class="hljs-keyword">in</span> the trie. */</span><br><span class="line">    bool search(string word) &#123;</span><br><span class="line">        Node* temp=root;</span><br><span class="line">        <span class="hljs-keyword">for</span>(int i=0;i&lt;word.length();i++)&#123;</span><br><span class="line">            auto it=temp-&gt;next.count(word[i]);</span><br><span class="line">            <span class="hljs-keyword">if</span>(!it) <span class="hljs-built_in">return</span> <span class="hljs-literal">false</span>;</span><br><span class="line">            temp=temp-&gt;next[word[i]];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-keyword">if</span>(temp-&gt;isWord) <span class="hljs-built_in">return</span> <span class="hljs-literal">true</span>;</span><br><span class="line">        <span class="hljs-built_in">return</span> <span class="hljs-literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    /** Returns <span class="hljs-keyword">if</span> there is any word <span class="hljs-keyword">in</span> the trie that starts with the given prefix. */</span><br><span class="line">    bool startsWith(string prefix) &#123;</span><br><span class="line">        Node* temp=root;</span><br><span class="line">        <span class="hljs-keyword">for</span>(int i=0;i&lt;prefix.length();i++)&#123;</span><br><span class="line">            <span class="hljs-keyword">if</span>(temp-&gt;next.count(prefix[i])==0) <span class="hljs-built_in">return</span> <span class="hljs-literal">false</span>;</span><br><span class="line">            temp=temp-&gt;next[prefix[i]];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="hljs-built_in">return</span> <span class="hljs-literal">true</span>;        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    string replaceWords(vector&lt;string&gt;&amp; dict, string sentence) &#123;</span><br><span class="line">        Trie tire;</span><br><span class="line">        vector&lt;string&gt; temp;</span><br><span class="line">        <span class="hljs-keyword">for</span>(string it:dict)  tire.insert(it);</span><br><span class="line">        int i=0;</span><br><span class="line">        string t;</span><br><span class="line">        <span class="hljs-keyword">for</span>(int i=0;i&lt;sentence.length();i++)&#123;</span><br><span class="line">            <span class="hljs-keyword">if</span>(sentence[i]!=<span class="hljs-string">' '</span>) &#123;</span><br><span class="line">                t+=sentence[i];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="hljs-keyword">else</span>&#123;</span><br><span class="line">                temp.push_back(t);</span><br><span class="line">                t.clear();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        temp.push_back(t);</span><br><span class="line">        <span class="hljs-keyword">for</span>(int it=0;it&lt;temp.size();it++)&#123;</span><br><span class="line">            Node *p=tire.root;</span><br><span class="line">            string repre;</span><br><span class="line">            <span class="hljs-keyword">for</span>(int i=0;i&lt;temp[it].length();i++)&#123;</span><br><span class="line">                <span class="hljs-keyword">if</span>(p-&gt;isWord)&#123;</span><br><span class="line">                    temp[it]=repre;</span><br><span class="line">                    <span class="hljs-built_in">break</span>;</span><br><span class="line">                &#125;                </span><br><span class="line">                auto it1=p-&gt;next.find(temp[it][i]);</span><br><span class="line"></span><br><span class="line">                <span class="hljs-keyword">if</span>(it1!=p-&gt;next.end())&#123;</span><br><span class="line">                    p=p-&gt;next[temp[it][i]];</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="hljs-keyword">else</span> <span class="hljs-built_in">break</span>;</span><br><span class="line">                repre+=temp[it][i];</span><br><span class="line">            &#125;</span><br><span class="line">            repre.clear();</span><br><span class="line">        &#125;</span><br><span class="line">        string res=temp[0];</span><br><span class="line">        <span class="hljs-keyword">for</span>(int i=1;i&lt;temp.size();i++)</span><br><span class="line">            res+=<span class="hljs-string">' '</span>+temp[i];</span><br><span class="line">        <span class="hljs-built_in">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br></pre></td><td class="code"><pre><span class="line">class Node &#123;</span><br><span class="line">public:</span><br><span class="line">    bool isWord=<span class="literal">false</span>;</span><br><span class="line">    unordered_map&lt;char,Node*&gt; next;</span><br><span class="line">    <span class="function"><span class="title">Node</span></span>() &#123;</span><br><span class="line">        isWord=<span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    Node(unordered_map&lt;char,Node*&gt; _next)&#123;</span><br><span class="line">        next=_next;</span><br><span class="line">        isWord=<span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">class Trie &#123;</span><br><span class="line">public:</span><br><span class="line">    Node* root;</span><br><span class="line">    /** Initialize your data structure here. */</span><br><span class="line">    <span class="function"><span class="title">Trie</span></span>() &#123;</span><br><span class="line">        root=new Node();</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    /** Inserts a word into the trie. */</span><br><span class="line">    void insert(string word) &#123;</span><br><span class="line">        Node* temp=root;</span><br><span class="line">        <span class="keyword">for</span>(int i=0;i&lt;word.length();i++)&#123;</span><br><span class="line">            auto it=temp-&gt;next.find(word[i]);</span><br><span class="line">            <span class="keyword">if</span>(it==temp-&gt;next.end())&#123;</span><br><span class="line">                temp-&gt;next[word[i]]=new Node();</span><br><span class="line">                temp=temp-&gt;next[word[i]];                </span><br><span class="line">            &#125;<span class="keyword">else</span> temp=temp-&gt;next[word[i]];</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">        temp-&gt;isWord=<span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    /** Returns <span class="keyword">if</span> the word is <span class="keyword">in</span> the trie. */</span><br><span class="line">    bool search(string word) &#123;</span><br><span class="line">        Node* temp=root;</span><br><span class="line">        <span class="keyword">for</span>(int i=0;i&lt;word.length();i++)&#123;</span><br><span class="line">            auto it=temp-&gt;next.count(word[i]);</span><br><span class="line">            <span class="keyword">if</span>(!it) <span class="built_in">return</span> <span class="literal">false</span>;</span><br><span class="line">            temp=temp-&gt;next[word[i]];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(temp-&gt;isWord) <span class="built_in">return</span> <span class="literal">true</span>;</span><br><span class="line">        <span class="built_in">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    /** Returns <span class="keyword">if</span> there is any word <span class="keyword">in</span> the trie that starts with the given prefix. */</span><br><span class="line">    bool startsWith(string prefix) &#123;</span><br><span class="line">        Node* temp=root;</span><br><span class="line">        <span class="keyword">for</span>(int i=0;i&lt;prefix.length();i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(temp-&gt;next.count(prefix[i])==0) <span class="built_in">return</span> <span class="literal">false</span>;</span><br><span class="line">            temp=temp-&gt;next[prefix[i]];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">return</span> <span class="literal">true</span>;        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    string replaceWords(vector&lt;string&gt;&amp; dict, string sentence) &#123;</span><br><span class="line">        Trie tire;</span><br><span class="line">        vector&lt;string&gt; temp;</span><br><span class="line">        <span class="keyword">for</span>(string it:dict)  tire.insert(it);</span><br><span class="line">        int i=0;</span><br><span class="line">        string t;</span><br><span class="line">        <span class="keyword">for</span>(int i=0;i&lt;sentence.length();i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(sentence[i]!=<span class="string">' '</span>) &#123;</span><br><span class="line">                t+=sentence[i];</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span>&#123;</span><br><span class="line">                temp.push_back(t);</span><br><span class="line">                t.clear();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        temp.push_back(t);</span><br><span class="line">        <span class="keyword">for</span>(int it=0;it&lt;temp.size();it++)&#123;</span><br><span class="line">            Node *p=tire.root;</span><br><span class="line">            string repre;</span><br><span class="line">            <span class="keyword">for</span>(int i=0;i&lt;temp[it].length();i++)&#123;</span><br><span class="line">                <span class="keyword">if</span>(p-&gt;isWord)&#123;</span><br><span class="line">                    temp[it]=repre;</span><br><span class="line">                    <span class="built_in">break</span>;</span><br><span class="line">                &#125;                </span><br><span class="line">                auto it1=p-&gt;next.find(temp[it][i]);</span><br><span class="line"></span><br><span class="line">                <span class="keyword">if</span>(it1!=p-&gt;next.end())&#123;</span><br><span class="line">                    p=p-&gt;next[temp[it][i]];</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span> <span class="built_in">break</span>;</span><br><span class="line">                repre+=temp[it][i];</span><br><span class="line">            &#125;</span><br><span class="line">            repre.clear();</span><br><span class="line">        &#125;</span><br><span class="line">        string res=temp[0];</span><br><span class="line">        <span class="keyword">for</span>(int i=1;i&lt;temp.size();i++)</span><br><span class="line">            res+=<span class="string">' '</span>+temp[i];</span><br><span class="line">        <span class="built_in">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
         </div>
         
@@ -221,11 +220,12 @@
 <div class="card widget">
     <div class="card-content">
         <nav class="level">
-            <div class="level-item has-text-centered">
+            <div class="level-item has-text-centered" style="flex-shrink: 1">
                 <div>
                     
-                        <img class="image is-128x128 has-mb-6" src="/images/xgnb.jpg" alt="Doctor-Do">
-                    
+                    <figure class="image is-128x128 has-mb-6">
+                        <img class="" src="/images/xgnb.jpg" alt="Doctor-Do">
+                    </figure>
                     
                     <p class="is-size-4 is-block">
                         Doctor-Do
@@ -239,7 +239,7 @@
                     
                     <p class="is-size-6 is-flex is-flex-center has-text-grey">
                         <i class="fas fa-map-marker-alt has-mr-7"></i>
-                        <span>WuHan,Hubei</span>
+                        <span>Kunshan,Jiangsu</span>
                     </p>
                     
                 </div>
@@ -251,9 +251,11 @@
                     <p class="heading">
                         文章
                     </p>
-                    <p class="title has-text-weight-normal">
-                        15
-                    </p>
+                    <a href="/archives">
+                        <p class="title has-text-weight-normal">
+                            16
+                        </p>
+                    </a>
                 </div>
             </div>
             <div class="level-item has-text-centered is-marginless">
@@ -261,9 +263,11 @@
                     <p class="heading">
                         分类
                     </p>
-                    <p class="title has-text-weight-normal">
-                        4
-                    </p>
+                    <a href="/categories">
+                        <p class="title has-text-weight-normal">
+                            4
+                        </p>
+                    </a>
                 </div>
             </div>
             <div class="level-item has-text-centered is-marginless">
@@ -271,45 +275,54 @@
                     <p class="heading">
                         标签
                     </p>
-                    <p class="title has-text-weight-normal">
-                        21
-                    </p>
+                    <a href="/tags">
+                        <p class="title has-text-weight-normal">
+                            21
+                        </p>
+                    </a>
                 </div>
             </div>
         </nav>
+        
         <div class="level">
-            <a class="level-item button is-link is-rounded" href="https://weibo.com/5266102403/profile?topnav=1&amp;wvr=6&amp;is_all=1" target="_blank">
+            <a class="level-item button is-link is-rounded" href="https://weibo.com/5266102403/profile?topnav=1&amp;wvr=6&amp;is_all=1" target="_blank" rel="noopener">
                 关注我</a>
         </div>
         
         
+        
         <div class="level is-mobile">
             
-            <a class="level-item button is-white is-marginless" target="_blank" title="Github" href="https://github.com/Doctor-Do">
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="Github" href="https://github.com/Doctor-Do">
                 
                 <i class="fab fa-github"></i>
                 
             </a>
             
-            <a class="level-item button is-white is-marginless" target="_blank" title="Facebook" href="http://facebook.com">
-                
-                <i class="fab fa-facebook"></i>
-                
-            </a>
-            
-            <a class="level-item button is-white is-marginless" target="_blank" title="Weibo" href="https://weibo.com/5266102403">
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="Weibo" href="https://weibo.com/5266102403">
                 
                 <i class="fab fa-weibo"></i>
                 
             </a>
             
-            <a class="level-item button is-white is-marginless" target="_blank" title="QQ" href="http://qq.com">
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="Twitter" href="https://twitter.com/doctordo11">
+                
+                <i class="fab fa-twitter"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="QQ" href="http://qq.com">
                 
                 <i class="fab fa-qq"></i>
                 
             </a>
             
-            <a class="level-item button is-white is-marginless" target="_blank" title="RSS" href="/">
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="RSS" href="/">
                 
                 <i class="fas fa-rss"></i>
                 
@@ -322,9 +335,7 @@
     
         
     
-        
-
-<div class="card widget">
+        <div class="card widget">
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
@@ -333,18 +344,18 @@
         <ul class="menu-list">
         
             <li>
-                <a class="level is-mobile" href="https://acatcher.club" target="_blank">
+                <a class="level is-mobile" href="https://aseeker.xyz/" target="_blank" rel="noopener">
                     <span class="level-left">
                         <span class="level-item">Yzx&#39;sblog</span>
                     </span>
                     <span class="level-right">
-                        <span class="level-item tag">acatcher.club</span>
+                        <span class="level-item tag">aseeker.xyz</span>
                     </span>
                 </a>
             </li>
         
             <li>
-                <a class="level is-mobile" href="https://github.com/ppoffice" target="_blank">
+                <a class="level is-mobile" href="https://github.com/ppoffice" target="_blank" rel="noopener">
                     <span class="level-left">
                         <span class="level-item">PPOffice</span>
                     </span>
@@ -358,7 +369,6 @@
         </div>
     </div>
 </div>
-
 
     
         
@@ -391,7 +401,7 @@
                 <span class="level-item">杂谈</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">1</span>
+                <span class="level-item tag">2</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/测试/">
@@ -407,26 +417,42 @@
     </div>
 </div>
     
-        
-<div class="card widget">
+        <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
             标签云
         </h3>
-        <a href="/tags/C/" style="font-size: 16.67px;">C++</a> <a href="/tags/DFS/" style="font-size: 10px;">DFS</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/N叉树/" style="font-size: 10px;">N叉树</a> <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/n叉树/" style="font-size: 10px;">n叉树</a> <a href="/tags/二叉搜索树/" style="font-size: 10px;">二叉搜索树</a> <a href="/tags/位运算/" style="font-size: 10px;">位运算</a> <a href="/tags/前缀树/" style="font-size: 10px;">前缀树</a> <a href="/tags/动态规划/" style="font-size: 20px;">动态规划</a> <a href="/tags/双指针/" style="font-size: 13.33px;">双指针</a> <a href="/tags/合并排序/" style="font-size: 10px;">合并排序</a> <a href="/tags/回溯/" style="font-size: 10px;">回溯</a> <a href="/tags/字符串/" style="font-size: 10px;">字符串</a> <a href="/tags/排序搜索/" style="font-size: 10px;">排序搜索</a> <a href="/tags/数组/" style="font-size: 16.67px;">数组</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a> <a href="/tags/贪心算法/" style="font-size: 10px;">贪心算法</a> <a href="/tags/递归迭代/" style="font-size: 10px;">递归迭代</a> <a href="/tags/链表/" style="font-size: 10px;">链表</a> <a href="/tags/随便写写/" style="font-size: 10px;">随便写写</a>
+        <a href="/tags/C/" style="font-size: 16.67px;">C++</a> <a href="/tags/DFS/" style="font-size: 10px;">DFS</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/N叉树/" style="font-size: 10px;">N叉树</a> <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/n叉树/" style="font-size: 10px;">n叉树</a> <a href="/tags/二叉搜索树/" style="font-size: 10px;">二叉搜索树</a> <a href="/tags/位运算/" style="font-size: 10px;">位运算</a> <a href="/tags/前缀树/" style="font-size: 10px;">前缀树</a> <a href="/tags/动态规划/" style="font-size: 20px;">动态规划</a> <a href="/tags/双指针/" style="font-size: 13.33px;">双指针</a> <a href="/tags/合并排序/" style="font-size: 10px;">合并排序</a> <a href="/tags/回溯/" style="font-size: 10px;">回溯</a> <a href="/tags/字符串/" style="font-size: 10px;">字符串</a> <a href="/tags/排序搜索/" style="font-size: 10px;">排序搜索</a> <a href="/tags/数组/" style="font-size: 16.67px;">数组</a> <a href="/tags/算法/" style="font-size: 10px;">算法</a> <a href="/tags/贪心算法/" style="font-size: 10px;">贪心算法</a> <a href="/tags/递归迭代/" style="font-size: 10px;">递归迭代</a> <a href="/tags/链表/" style="font-size: 10px;">链表</a> <a href="/tags/随便写写/" style="font-size: 13.33px;">随便写写</a>
     </div>
 </div>
-
     
     
         <div class="column-right-shadow is-hidden-widescreen ">
         
-            
-<div class="card widget">
+            <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
             最新文章
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2020/01/16/200116/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/gallery/shinan.jpg" alt="写在2020的话">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-16T15:11:14.000Z">2020-01-16</time></div>
+                    <a href="/2020/01/16/200116/" class="title has-link-black-ter is-size-6 has-text-weight-normal">写在2020的话</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/杂谈/">杂谈</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -439,7 +465,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-09T12:54:47.000Z">2019-05-09</time></div>
-                    <a href="/2019/05/09/190509/" class="has-link-black-ter is-size-6">5.9 LeetCode</a>
+                    <a href="/2019/05/09/190509/" class="title has-link-black-ter is-size-6 has-text-weight-normal">5.9 LeetCode</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
                     </p>
@@ -458,7 +484,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-08T08:43:06.000Z">2019-05-08</time></div>
-                    <a href="/2019/05/08/190508/" class="has-link-black-ter is-size-6">5.8 LeetCode</a>
+                    <a href="/2019/05/08/190508/" class="title has-link-black-ter is-size-6 has-text-weight-normal">5.8 LeetCode</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
                     </p>
@@ -477,7 +503,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-07T13:15:33.000Z">2019-05-07</time></div>
-                    <a href="/2019/05/07/190507/" class="has-link-black-ter is-size-6">5.7LeetCode</a>
+                    <a href="/2019/05/07/190507/" class="title has-link-black-ter is-size-6 has-text-weight-normal">5.7LeetCode</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
                     </p>
@@ -496,26 +522,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-05T12:41:10.000Z">2019-05-05</time></div>
-                    <a href="/2019/05/05/190505/" class="has-link-black-ter is-size-6">5.5LeetCode</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/05/04/190504/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/Italy.jpg" alt="190504">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-04T10:18:56.000Z">2019-05-04</time></div>
-                    <a href="/2019/05/04/190504/" class="has-link-black-ter is-size-6">190504</a>
+                    <a href="/2019/05/05/190505/" class="title has-link-black-ter is-size-6 has-text-weight-normal">5.5LeetCode</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
                     </p>
@@ -525,7 +532,6 @@
         
     </div>
 </div>
-
         
             <div class="card widget">
     <div class="card-content">
@@ -534,6 +540,17 @@
             归档
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/01/">
+                <span class="level-start">
+                    <span class="level-item">一月 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2019/05/">
@@ -713,7 +730,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/随便写写/">
                         <span class="tag">随便写写</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -733,12 +750,30 @@
 
 <div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right ">
     
-        
-<div class="card widget">
+        <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
             最新文章
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2020/01/16/200116/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/gallery/shinan.jpg" alt="写在2020的话">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-01-16T15:11:14.000Z">2020-01-16</time></div>
+                    <a href="/2020/01/16/200116/" class="title has-link-black-ter is-size-6 has-text-weight-normal">写在2020的话</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/杂谈/">杂谈</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -751,7 +786,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-09T12:54:47.000Z">2019-05-09</time></div>
-                    <a href="/2019/05/09/190509/" class="has-link-black-ter is-size-6">5.9 LeetCode</a>
+                    <a href="/2019/05/09/190509/" class="title has-link-black-ter is-size-6 has-text-weight-normal">5.9 LeetCode</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
                     </p>
@@ -770,7 +805,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-08T08:43:06.000Z">2019-05-08</time></div>
-                    <a href="/2019/05/08/190508/" class="has-link-black-ter is-size-6">5.8 LeetCode</a>
+                    <a href="/2019/05/08/190508/" class="title has-link-black-ter is-size-6 has-text-weight-normal">5.8 LeetCode</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
                     </p>
@@ -789,7 +824,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-07T13:15:33.000Z">2019-05-07</time></div>
-                    <a href="/2019/05/07/190507/" class="has-link-black-ter is-size-6">5.7LeetCode</a>
+                    <a href="/2019/05/07/190507/" class="title has-link-black-ter is-size-6 has-text-weight-normal">5.7LeetCode</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
                     </p>
@@ -808,26 +843,7 @@
             <div class="media-content">
                 <div class="content">
                     <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-05T12:41:10.000Z">2019-05-05</time></div>
-                    <a href="/2019/05/05/190505/" class="has-link-black-ter is-size-6">5.5LeetCode</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/05/04/190504/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/gallery/Italy.jpg" alt="190504">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-05-04T10:18:56.000Z">2019-05-04</time></div>
-                    <a href="/2019/05/04/190504/" class="has-link-black-ter is-size-6">190504</a>
+                    <a href="/2019/05/05/190505/" class="title has-link-black-ter is-size-6 has-text-weight-normal">5.5LeetCode</a>
                     <p class="is-size-7 is-uppercase">
                         <a class="has-link-grey -link" href="/categories/leetcode/">leetcode</a>
                     </p>
@@ -837,7 +853,6 @@
         
     </div>
 </div>
-
     
         <div class="card widget">
     <div class="card-content">
@@ -846,6 +861,17 @@
             归档
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/01/">
+                <span class="level-start">
+                    <span class="level-item">一月 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2019/05/">
@@ -1025,7 +1051,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/随便写写/">
                         <span class="tag">随便写写</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -1050,22 +1076,18 @@
                 
                 </a>
                 <p class="is-size-7">
-                &copy; 2019 Doctor-Do&nbsp;
-                Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> & <a href="http://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
+                &copy; 2020 Doctor-Do&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> & <a
+                        href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a>
                 
                 </p>
             </div>
-	      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次 &nbsp;   </span>
-<span id="busuanzi_container_site_uv">访客数<span id="busuanzi_value_site_uv"></span>人次</span>
-	
             <div class="level-end">
             
                 <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
                 
-                
                 <p class="control">
-                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/">
+                    <a class="button is-white is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/">
                         
                         <i class="fab fa-creative-commons"></i>
                         
@@ -1073,7 +1095,7 @@
                 </p>
                 
                 <p class="control">
-                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                    <a class="button is-white is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
                         
                         <i class="fab fa-creative-commons-by"></i>
                         
@@ -1081,7 +1103,7 @@
                 </p>
                 
                 <p class="control">
-                    <a class="button is-white is-large" target="_blank" title="Download on GitHub" href="http://github.com/ppoffice/hexo-theme-icarus">
+                    <a class="button is-white is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
                         
                         <i class="fab fa-github"></i>
                         
@@ -1099,22 +1121,37 @@
 <script>moment.locale("zh-CN");</script>
 
 
-    
-    
-    
-    <script src="/js/animation.js"></script>
-    
+<script>
+var IcarusThemeSettings = {
+    site: {
+        url: 'http://doctordo.cn',
+        external_link: {"enable":true,"exclude":[]}
+    },
+    article: {
+        highlight: {
+            clipboard: true,
+            fold: 'unfolded'
+        }
+    }
+};
+</script>
 
-    
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
-    <script src="/js/gallery.js" defer></script>
-    
 
-    
-    
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+
+
+
+
+
+<script src="/js/animation.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+<script src="/js/gallery.js" defer></script>
+
+
 
 <div id="outdated">
     <h6>Your browser is out-of-date!</h6>
@@ -1134,8 +1171,6 @@
 </script>
 
 
-    
-    
 <script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
@@ -1159,8 +1194,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
-    
-    
 
 <a id="back-to-top" title="回到顶端" href="javascript:;">
     <i class="fas fa-chevron-up"></i>
@@ -1168,23 +1201,16 @@ document.addEventListener('DOMContentLoaded', function () {
 <script src="/js/back-to-top.js" defer></script>
 
 
-    
-    
-    
-    
 
-    
-    
-    
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
-    <script src="/js/clipboard.js" defer></script>
-    
 
-    
-    
-    
+
+
+
+
+
+
+
+
 
 
 <script src="/js/main.js" defer></script>
@@ -1193,7 +1219,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="searchbox ins-search">
     <div class="searchbox-container ins-search-container">
         <div class="searchbox-input-wrapper">
-            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么...">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么..." />
             <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="searchbox-result-wrapper ins-section-wrapper">
